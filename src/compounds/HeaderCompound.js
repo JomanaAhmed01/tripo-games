@@ -1,11 +1,18 @@
 import React from 'react';
+import styled from "styled-components"
+
 
 function HeaderCompound() {
   return (
-    <div>
+    <Wrapper>
       fffffff
-    </div>
+    </Wrapper>
   );
 }
+
+
+export const Wrapper = styled.div`
+  border: 1px solid red;
+`
 
 export default HeaderCompound;
