@@ -1,9 +1,10 @@
+import HeaderCompound from './compounds/HeaderCompound';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      ssssssssss
+      <HeaderCompound />
     </div>
   );
 }
