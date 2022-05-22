@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
-import HeaderLogo from '../components/HeaderLogo';
-import HeaderNavbar from '../components/HeaderNavbar';
+import HeaderLogo from '../components/Header/HeaderLogo';
+import HeaderNavbar from '../components/Header/HeaderNavbar';
 import img from '../img/bg.jpg'
 
 function HeaderCompound() {
