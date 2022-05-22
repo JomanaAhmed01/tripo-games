@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from "styled-components"
+import styled from "styled-components";
 
 function HeaderApps() {
     return (
         <Wrapper>
-            <Image src='../img/download-on-the-app-store.png' />
+            <Image src='./img/get-it-on-google-play.png' />
         </Wrapper>
     );
 }
@@ -12,6 +12,7 @@ function HeaderApps() {
 
 export const Wrapper = styled.div`
   border: 3px solid purple;
+  padding-bottom: 340px;
 `
 
 export const Image = styled.img`
