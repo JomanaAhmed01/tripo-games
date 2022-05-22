@@ -3,6 +3,7 @@ import styled from "styled-components"
 import HeaderLogo from '../components/Header/HeaderLogo';
 import HeaderNavbar from '../components/Header/HeaderNavbar';
 import HeaderText from '../components/Header/HeaderText';
+import HeaderApps from '../components/Header/HeaderApps'
 import img from '../img/bg.jpg'
 
 function HeaderCompound() {
@@ -13,6 +14,7 @@ function HeaderCompound() {
         <HeaderNavbar />
       </HeaderWrapper>
       <HeaderText />
+      <HeaderApps />
     </Wrapper>
   );
 }
