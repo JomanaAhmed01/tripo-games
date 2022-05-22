@@ -14,14 +14,23 @@ function HeaderLogo() {
 
 
 export const Wrapper = styled.div`
-  border: 3px solid green;
-  background-image: ('C:\inetpub\wwwroot\Github\tripo-games\public\img\bg.jpg');
-
+  /* border: 3px solid green; */
+  background-color: #DA392B;
+  width: 166px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 `
 
 export const Link = styled.a`
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
   font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 12px;
 `
 
 export default HeaderLogo;
