@@ -4,7 +4,6 @@ import HeaderLogo from '../components/Header/HeaderLogo';
 import HeaderNavbar from '../components/Header/HeaderNavbar';
 import HeaderText from '../components/Header/HeaderText';
 import HeaderApps from '../components/Header/HeaderApps'
-import img from '../img/bg.jpg'
 
 function HeaderCompound() {
   return (
@@ -22,7 +21,8 @@ function HeaderCompound() {
 
 export const Wrapper = styled.div`
   border: 3px solid red;
-  background-image: url(${img});
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
 `
 
 export const HeaderWrapper = styled.div`
