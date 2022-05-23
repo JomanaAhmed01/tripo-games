@@ -15,23 +15,18 @@ function HeaderText() {
 
 
 export const Wrapper = styled.div`
-  /* border: 3px solid blue; */
   padding-top: 100px;
   padding-left: 100px;
 
   @media screen and (max-width: 1024px) {
     padding-left: 30px;
     padding-top: 60px;
-  }
-
-  @media screen and (max-width: 1024px) {
     font-size: 70px;
     padding-top: 0px;
   }
 `
 
 export const Header = styled.h1`
-  /* border: 3px solid blue; */
   font-size: 80px;
   font-family: 'Dancing Script', cursive;
   color: #272443;
@@ -47,7 +42,6 @@ export const Header = styled.h1`
 `
 
 export const Text = styled.p`
-  /* border: 3px solid blue; */
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
   position: relative;

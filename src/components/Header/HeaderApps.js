@@ -12,7 +12,6 @@ function HeaderApps() {
 
 
 export const Wrapper = styled.div`
-  /* border: 3px solid purple; */
   padding-bottom: 290px;
   padding-left: 100px;
   width: 450px;
@@ -30,7 +29,6 @@ export const Wrapper = styled.div`
 `
 
 export const ImageOne = styled.img`
-  /* border: 3px solid purple; */
   width: 200px;
   height: 60px;
   border-radius: 10px;
@@ -48,7 +46,6 @@ export const ImageOne = styled.img`
 `
 
 export const ImageTwo = styled.img`
-  /* border: 3px solid yellow; */
   width: 200px;
   height: 60px;
   border-radius: 10px;

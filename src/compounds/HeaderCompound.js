@@ -20,7 +20,6 @@ function HeaderCompound() {
 
 
 export const Wrapper = styled.div`
-  border: 3px solid red;
   background-image: url('./img/bg.jpg');
   background-repeat: no-repeat;
 `

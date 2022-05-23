@@ -33,7 +33,6 @@ function HeaderNavbar() {
 
 
 export const Wrapper = styled.div`
-  /* border: 3px solid purple; */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 
@@ -43,7 +42,6 @@ export const Wrapper = styled.div`
 `
 
 export const Items = styled.div`
-  /* border: 3px solid purple; */
   display: flex;
   justify-content: space-around;
 
@@ -53,7 +51,6 @@ export const Items = styled.div`
 `
 
 export const ItemOne = styled.div`
-  /* border: 3px solid yellow; */
   width: 104px;
   height: 60px;
   background-color: #DA392B;
@@ -62,16 +59,14 @@ export const ItemOne = styled.div`
 `
 
 export const ItemTwo = styled.div`
-/*  border: 3px solid yellow;
-*/  width: 104px;
+  width: 104px;
   height: 60px;
   background-color: #FFFFFF;
   cursor: pointer;
 `
 
 export const ItemThree = styled.div`
-/*  border: 3px solid yellow;
-*/  width: 104px;
+  width: 104px;
   height: 60px;
   background-color: #FFFFFF;
   cursor: pointer;
@@ -84,8 +79,7 @@ export const ItemThree = styled.div`
 `
 
 export const ItemFour = styled.div`
-/*  border: 3px solid yellow;
-*/  width: 104px;
+  width: 104px;
   height: 60px;
   background-color: #FFFFFF;
   cursor: pointer;
@@ -98,8 +92,7 @@ export const ItemFour = styled.div`
 `
 
 export const ItemFive = styled.div`
-/*  border: 3px solid yellow;
-*/  width: 104px;
+  width: 104px;
   height: 60px;
   background-color: #FFFFFF;
   border-bottom-right-radius: 12px;
@@ -113,21 +106,18 @@ export const ItemFive = styled.div`
 `
 
 export const TextOne = styled.p`
-  /* border: 3px solid green; */
   text-align: center;
   color: #FFFFFF;
   font-size: 16px;
 `
 
 export const TextTwo = styled.p`
-  /* border: 3px solid green; */
   text-align: center;
   color: #272443;
   font-size: 16px;
 `
 
 export const TextThree = styled.p`
-  /* border: 3px solid green; */
   text-align: center;
   color: #272443;
   font-size: 16px;
@@ -138,7 +128,6 @@ export const TextThree = styled.p`
 `
 
 export const TextFour = styled.p`
-  /* border: 3px solid green; */
   text-align: center;
   color: #272443;
   font-size: 16px;
@@ -148,7 +137,6 @@ export const TextFour = styled.p`
   }
 `
 export const TextFive = styled.p`
-  /* border: 3px solid green; */
   text-align: center;
   color: #272443;
   font-size: 16px;
