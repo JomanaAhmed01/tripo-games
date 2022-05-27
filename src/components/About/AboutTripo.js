@@ -17,6 +17,10 @@ export const Header = styled.h3`
   border: 3px solid red;
   text-align: center;
   color: #272443;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `
 
 export default AboutTripo;
