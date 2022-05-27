@@ -59,6 +59,8 @@ export const Wrapper = styled.div`
 
 export const Card = styled.div`
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
 `
 
 export const Image = styled.img`
@@ -90,7 +92,7 @@ export const GameName = styled.p`
   font-size: 24px;
 
   @media screen and (max-width: 880px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `
 
