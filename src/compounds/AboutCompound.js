@@ -3,6 +3,7 @@ import styled from "styled-components"
 import AboutTripo from '../components/About/AboutTripo'
 import MobileEntertainment from '../components/About/MobileEntertainment';
 import OurGames from '../components/About/OurGames'
+import TripoGames from '../components/About/TripoGames'
 
 function AboutCompound() {
     return (
@@ -10,6 +11,7 @@ function AboutCompound() {
           <AboutTripo />
           <MobileEntertainment />
           <OurGames />
+          <TripoGames />
         </Wrapper>
     );
 }
