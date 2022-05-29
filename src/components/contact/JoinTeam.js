@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   margin-top: 200px;
   padding-left: 100px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 300px;
 `
 
 export const Text = styled.p`
