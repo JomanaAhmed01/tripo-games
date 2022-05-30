@@ -2,7 +2,8 @@ import './App.css';
 import HeaderCompound from './compounds/HeaderCompound';
 import GameCardsCompound from './compounds/GameCardsCompound';
 import AboutCompound from './compounds/AboutCompound';
-import ContactCompound from './compounds/ContactCompound'
+import ContactCompound from './compounds/ContactCompound';
+import FooterCompound from './compounds/FooterCompound';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GameCardsCompound />
       <AboutCompound />
       <ContactCompound />
+      <FooterCompound />
     </div>
   );
 }
