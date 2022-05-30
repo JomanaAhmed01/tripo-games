@@ -2,44 +2,44 @@ import React from 'react';
 import styled from "styled-components";
 
 function GetInTouch() {
-    return (
-        <Wrapper>
-            <Header>Get In Touch</Header>
-            <Text>I'm a paragraph. Click here to add your own text and edit me.</Text>
+  return (
+    <Wrapper>
+      <Header>Get In Touch</Header>
+      <Text>I'm a paragraph. Click here to add your own text and edit me.</Text>
 
-            <FormsWrapper>
-                <FirstRow>
-                    <LabelFormWrapper>
-                        <FormLabel>First Name *</FormLabel>
-                        <FirstNameForm type='text' />
-                    </LabelFormWrapper>
+      <FormsWrapper>
+        <FirstRow>
+          <LabelFormWrapper>
+            <FormLabel>First Name *</FormLabel>
+            <FirstNameForm type='text' />
+          </LabelFormWrapper>
 
-                    <LabelFormWrapper>
-                        <FormLabel>Last Name *</FormLabel>
-                        <LastNameForm type='text' />
-                    </LabelFormWrapper>
-                </FirstRow>
+          <LabelFormWrapper>
+            <FormLabel>Last Name *</FormLabel>
+            <LastNameForm type='text' />
+          </LabelFormWrapper>
+        </FirstRow>
 
-                <SecondRow>
-                    <LabelFormWrapper>
-                        <FormLabel>Email *</FormLabel>
-                        <EmailForm type='text' />
-                    </LabelFormWrapper>
-                </SecondRow>
+        <SecondRow>
+          <LabelFormWrapper>
+            <FormLabel>Email *</FormLabel>
+            <EmailForm type='text' />
+          </LabelFormWrapper>
+        </SecondRow>
 
-                <ThirdRow>
-                    <LabelFormWrapper>
-                        <FormLabel>Leave us a message...</FormLabel>
-                        <MessageForm type='textarea' />
-                    </LabelFormWrapper>
-                </ThirdRow>
+        <ThirdRow>
+          <LabelFormWrapper>
+            <FormLabel>Leave us a message...</FormLabel>
+            <MessageForm type='textarea' />
+          </LabelFormWrapper>
+        </ThirdRow>
 
-                <FourthRow>
-                    <SubmitButton>Submit</SubmitButton>
-                </FourthRow>
-            </FormsWrapper>
-        </Wrapper>
-    );
+        <FourthRow>
+          <SubmitButton>Submit</SubmitButton>
+        </FourthRow>
+      </FormsWrapper>
+    </Wrapper>
+  );
 }
 
 
@@ -54,6 +54,10 @@ export const Wrapper = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 15px;
+
+  @media screen and (max-width: 1180px) {
+    bottom: 0px;
+  }
 
   @media screen and (max-width: 768px) {
     margin-left: auto;
