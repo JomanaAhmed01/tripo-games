@@ -28,6 +28,14 @@ export const Wrapper = styled.div`
   padding-left: 100px;
   padding-top: 50px;
   padding-bottom: 300px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 50px;
+  }
+
+  @media screen and (max-width: 560px) {
+    padding-left: 20px;
+  }
 `
 
 export const Text = styled.p`
@@ -36,6 +44,10 @@ export const Text = styled.p`
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   margin-bottom: -30px;
+
+  @media screen and (max-width: 660px) {
+    margin-bottom: -10px;
+  }
 `
 
 export const Header = styled.p`
@@ -43,7 +55,26 @@ export const Header = styled.p`
   font-size: 50px;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
-  width: 715px;
+  width: 70%;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 660px) {
+    font-size: 35px;
+    width: 90%;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
+    font-size: 32px;
+  }
 `
 
 export const Button = styled.a`
