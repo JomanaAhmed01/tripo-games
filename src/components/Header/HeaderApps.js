@@ -2,12 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 
 function HeaderApps() {
-    return (
-        <Wrapper>
-            <ImageOne src='./img/download-on-the-app-store.png' />
-            <ImageTwo src='./img/get-it-on-google-play.png' />
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <ImageOne src='./img/app-store.png' />
+      <ImageTwo src='./img/google-play.png' />
+    </Wrapper>
+  );
 }
 
 
