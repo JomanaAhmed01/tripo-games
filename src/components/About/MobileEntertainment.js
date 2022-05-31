@@ -18,6 +18,7 @@ function MobileEntertainment() {
       <ImagesWrapper>
         <Image src='./img/building-game.png' />
       </ImagesWrapper>
+      <Icon src='./img/mobile-entertainment-img.png' />
     </Wrapper>
   );
 }
@@ -53,7 +54,7 @@ export const Text = styled.p`
   text-align: center;
   color: #272443;
   font-family: 'Roboto', sans-serif;
-  margin-top: -30px;
+  margin-top: -10px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -101,6 +102,18 @@ export const Image = styled.img`
   border-radius: 20px;
   margin-top: 60px;
   width: 100%;
+`
+
+export const Icon = styled.img`
+  margin-top: -200px;
+  margin-left: -650px;
+
+  @media screen and (max-width: 930px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width: 40%;
+  }
 `
 
 export default MobileEntertainment;

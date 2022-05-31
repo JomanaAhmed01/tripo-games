@@ -12,7 +12,7 @@ function HeaderApps() {
 
 
 export const Wrapper = styled.div`
-  padding-bottom: 290px;
+  padding-bottom: 190px;
   padding-left: 100px;
   width: 450px;
   display: flex;

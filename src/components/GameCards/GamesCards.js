@@ -61,6 +61,11 @@ export const Card = styled.div`
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
+  transition: transform .2s;
+
+  :hover {
+    transform: scale(1.1);
+  }
 `
 
 export const Image = styled.img`

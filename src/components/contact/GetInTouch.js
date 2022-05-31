@@ -55,10 +55,6 @@ export const Wrapper = styled.div`
   padding-bottom: 10px;
   border-radius: 15px;
 
-  @media screen and (max-width: 1180px) {
-    bottom: 0px;
-  }
-
   @media screen and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
