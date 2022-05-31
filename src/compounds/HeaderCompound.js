@@ -22,7 +22,9 @@ function HeaderCompound() {
 export const Wrapper = styled.div`
   background-image: url('./img/bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
 `
 
 export const HeaderWrapper = styled.div`
