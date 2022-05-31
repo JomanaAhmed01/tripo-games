@@ -61,7 +61,7 @@ export const Card = styled.div`
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
-  transition: transform 0.5s;
+  transition: transform .2s;
 
   :hover {
     transform: scale(1.1);
@@ -77,8 +77,9 @@ export const Image = styled.img`
 
 export const TextWrapper = styled.div`
   width: 100%;
-  margin-top: -140px;
-  margin-left: 20px;
+  position: relative;
+  bottom: 140px;
+  left: 20px;
 
   @media screen and (max-width: 880px) {
     bottom: 110px;
