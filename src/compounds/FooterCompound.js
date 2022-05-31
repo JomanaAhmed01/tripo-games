@@ -3,6 +3,7 @@ import styled from "styled-components"
 import ImmersiveGaming from '../components/Footer/ImmersiveGaming'
 import Contact from '../components/Footer/Contact'
 import Navigation from '../components/Footer/Navigation'
+import Social from '../components/Footer/Social'
 
 function FooterCompound() {
   return (
@@ -11,6 +12,7 @@ function FooterCompound() {
       <FooterWrapper>
         <Contact />
         <Navigation />
+        <Social />
       </FooterWrapper>
     </Wrapper>
   );
