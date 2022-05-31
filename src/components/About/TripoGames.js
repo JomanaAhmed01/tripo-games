@@ -71,7 +71,7 @@ function AboutTripo() {
 export const Wrapper = styled.div`
   background-image: url('./img/games-bg.png');
   background-repeat: no-repeat;
-  background-position: fixed;
+  background-position: center;
   margin-top: 100px;
 
   @media screen and (max-width: 768px) {
