@@ -38,7 +38,6 @@ export const FooterWrapper = styled.div`
 
   @media screen and (max-width: 930px) {
     flex-direction: column;
-    border: 3px solid red;
   }
 `
 
