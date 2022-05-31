@@ -18,8 +18,6 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 50px;
 `
 
