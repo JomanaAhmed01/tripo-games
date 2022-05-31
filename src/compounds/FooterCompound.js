@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import ImmersiveGaming from '../components/Footer/ImmersiveGaming'
 import Contact from '../components/Footer/Contact'
+import Navigation from '../components/Footer/Navigation'
 
 function FooterCompound() {
   return (
@@ -9,6 +10,7 @@ function FooterCompound() {
       <ImmersiveGaming />
       <FooterWrapper>
         <Contact />
+        <Navigation />
       </FooterWrapper>
     </Wrapper>
   );
