@@ -80,7 +80,7 @@ export const EmailForm = styled.input`
   }
 
   @media screen and (max-width: 530px) {
-    width: 90%;
+    width: 85%;
     margin-bottom: 20px;
   }
 `
