@@ -7,12 +7,12 @@ function Social() {
           <Header>Social</Header>
 
           <ElementsWrapper>
-            <Element>Discord</Element>
-            <Element>Twitch</Element>  
-            <Element>Facebook</Element>
-            <Element>Youtube</Element>
-            <Element>Twitter</Element>
-            <Element>LinkedIn</Element>
+            <Element href='#'>Discord</Element>
+            <Element href='#'>Twitch</Element>  
+            <Element href='#'>Facebook</Element>
+            <Element href='#'>Youtube</Element>
+            <Element href='#'>Twitter</Element>
+            <Element href='#'>LinkedIn</Element>
           </ElementsWrapper>
         </Wrapper>
     );
@@ -40,6 +40,7 @@ export const Element = styled.a`
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 15px;
+  text-decoration: none;
 `
 
 export default Social;

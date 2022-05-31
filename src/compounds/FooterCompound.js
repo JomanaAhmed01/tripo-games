@@ -21,11 +21,17 @@ function FooterCompound() {
 }
 
 export const Wrapper = styled.div`
-  
+  border-top: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `
 
 export const FooterWrapper = styled.div`
-  
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
 `
 
 export default FooterCompound;

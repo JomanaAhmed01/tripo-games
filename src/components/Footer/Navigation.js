@@ -7,12 +7,12 @@ function Navigation() {
           <Header>Navigation</Header>
 
           <ElementsWrapper>
-            <Element>Games</Element>
-            <Element>Careers</Element>  
-            <Element>About</Element>
-            <Element>Contact</Element>
-            <Element>Privacy Policy</Element>
-            <Element>Terms & Conditions</Element>
+            <Element href='#'>Games</Element>
+            <Element href='#'>Careers</Element>  
+            <Element href='#'>About</Element>
+            <Element href='#'>Contact</Element>
+            <Element href='#'>Privacy Policy</Element>
+            <Element href='#'>Terms & Conditions</Element>
           </ElementsWrapper>
         </Wrapper>
     );
@@ -40,6 +40,7 @@ export const Element = styled.a`
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 15px;
+  text-decoration: none;
 `
 
 export default Navigation;
