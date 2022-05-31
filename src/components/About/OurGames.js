@@ -44,7 +44,7 @@ export const Text = styled.p`
   text-align: center;
   color: #272443;
   font-family: 'Roboto', sans-serif;
-  margin-top: -30px;
+  margin-top: -10px;
 
   @media screen and (max-width: 768px) {
     width: 90%;
