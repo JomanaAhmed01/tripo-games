@@ -13,7 +13,6 @@ function ImmersiveGaming() {
 
 
 export const Wrapper = styled.div`
-  border-top: 1px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center;
