@@ -22,6 +22,7 @@ function HeaderCompound() {
 export const Wrapper = styled.div`
   background-image: url('./img/bg.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 `
 
 export const HeaderWrapper = styled.div`

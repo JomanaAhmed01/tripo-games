@@ -30,7 +30,6 @@ export const Wrapper = styled.div`
 `
 
 export const Header = styled.p`
-  border: 3px solid red;
   text-align: center;
   color: #272443;
   font-size: 50px;
