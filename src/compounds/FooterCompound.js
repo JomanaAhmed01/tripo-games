@@ -12,8 +12,10 @@ function FooterCompound() {
       <ImmersiveGaming />
       <FooterWrapper>
         <Contact />
-        <Navigation />
-        <Social />
+        <NavigationSocialWrapper>
+          <Navigation />
+          <Social />
+        </NavigationSocialWrapper>
         <FindUsOn />
       </FooterWrapper>
     </Wrapper>
@@ -32,7 +34,22 @@ export const Wrapper = styled.div`
 export const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 80%;
+
+  @media screen and (max-width: 930px) {
+    flex-direction: column;
+    border: 3px solid red;
+  }
+`
+
+export const NavigationSocialWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+
+  @media screen and (max-width: 930px) {
+    width: 90%;
+  }
 `
 
 export default FooterCompound;

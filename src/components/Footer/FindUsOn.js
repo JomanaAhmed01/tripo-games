@@ -29,12 +29,19 @@ export const Header = styled.p`
 export const ElementsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 80%;
+
+  @media screen and (max-width: 930px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 `
 
 export const Image = styled.img`
   width: 135px;
   height: 40px;
   margin-bottom: 20px;
+  margin-right: 20px;
 `
 
 export default FindUsOn;
