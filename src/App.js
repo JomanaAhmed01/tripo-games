@@ -8,11 +8,11 @@ import FooterCompound from './compounds/FooterCompound';
 function App() {
   return (
     <div className="App">
-      <HeaderCompound />
+      {/* <HeaderCompound />
       <GameCardsCompound />
       <AboutCompound />
       <ContactCompound />
-      <FooterCompound />
+      <FooterCompound /> */}
     </div>
   );
 }
