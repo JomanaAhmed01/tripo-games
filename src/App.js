@@ -4,6 +4,7 @@ import GameCardsCompound from './compounds/GameCardsCompound';
 import AboutCompound from './compounds/AboutCompound';
 import ContactCompound from './compounds/ContactCompound';
 import FooterCompound from './compounds/FooterCompound';
+import GamesCompound from './compounds/GamesCompound'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutCompound />
       <ContactCompound />
       <FooterCompound /> */}
+      <GamesCompound />
     </div>
   );
 }
