@@ -3,32 +3,43 @@ import styled from "styled-components"
 import { Menu } from '@styled-icons/feather/Menu'
 
 function HeaderNavbar() {
-    return (
-        <Wrapper>
-            <Items>
-                <ItemOne>
-                    <TextOne>Home</TextOne>
-                </ItemOne>
+  return (
+    <Wrapper>
+      <Items>
+        <ItemOne>
+          <TextOne>Home</TextOne>
+        </ItemOne>
 
-                <ItemTwo>
-                    <TextTwo>Games</TextTwo>
-                </ItemTwo>
+        <ItemTwo>
+          <TextTwo>Games</TextTwo>
+          <GamesWrapper>
+            <Game>
+              <GameName>Kipon</GameName>
+            </Game>
+            <Game>
+              <GameName>Robotrix</GameName>
+            </Game>
+            <Game>
+              <GameName>Treasure Box</GameName>
+            </Game>
+          </GamesWrapper>
+        </ItemTwo>
 
-                <ItemThree>
-                    <TextThree>Careers</TextThree>
-                </ItemThree>
+        <ItemThree>
+          <TextThree>Careers</TextThree>
+        </ItemThree>
 
-                <ItemFour>
-                    <TextFour>About</TextFour>
-                </ItemFour>
+        <ItemFour>
+          <TextFour>About</TextFour>
+        </ItemFour>
 
-                <ItemFive>
-                    <TextFive>Contact</TextFive>
-                </ItemFive>
-            </Items>
-            <MenuIcon />
-        </Wrapper>
-    );
+        <ItemFive>
+          <TextFive>Contact</TextFive>
+        </ItemFive>
+      </Items>
+      <MenuIcon />
+    </Wrapper>
+  );
 }
 
 
@@ -63,6 +74,31 @@ export const ItemTwo = styled.div`
   height: 60px;
   background-color: #FFFFFF;
   cursor: pointer;
+`
+
+export const GamesWrapper = styled.div`
+  display: none;
+  background-color: #FFFFFF;
+  margin-top: 40px;
+  border-radius: 10px;
+`
+
+export const Game = styled.div`
+  width: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+
+  :hover {
+    background-color: #DA392B;
+    color: #FFFFFF;
+  }
+`
+
+export const GameName = styled.p`
+  
 `
 
 export const ItemThree = styled.div`
