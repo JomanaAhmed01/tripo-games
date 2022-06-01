@@ -2,10 +2,10 @@ import React from 'react';
 import styled from "styled-components"
 import KiponHeader from '../components/KiponGame/KiponHeader'
 
-function GamesCompound() {
+function KiponGameCompound() {
   return (
     <Wrapper>
-       <KiponHeader />
+      <KiponHeader />
     </Wrapper>
   );
 }
@@ -15,4 +15,4 @@ export const Wrapper = styled.div`
   
 `
 
-export default GamesCompound;
+export default KiponGameCompound;
