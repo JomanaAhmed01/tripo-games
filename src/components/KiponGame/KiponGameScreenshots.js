@@ -46,6 +46,7 @@ export const ImagesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin-bottom: 100px;
 
   @media screen and (max-width: 880px) {
     display: flex;
