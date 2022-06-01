@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import KiponHeader from '../components/KiponGame/KiponHeader'
 import KiponGameCard from '../components/KiponGame/KiponGameCard'
+import KiponGameScreenshots from '../components/KiponGame/KiponGameScreenshots'
 
 function KiponGameCompound() {
   return (
@@ -10,6 +11,7 @@ function KiponGameCompound() {
       <CardWrapper>
         <KiponGameCard />
       </CardWrapper>
+      <KiponGameScreenshots />
     </Wrapper>
   );
 }
