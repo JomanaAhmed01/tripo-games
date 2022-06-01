@@ -4,18 +4,18 @@ import HeaderLogo from '../Header/HeaderLogo'
 import HeaderNavbar from '../Header/HeaderNavbar'
 
 function KiponHeader() {
-    return (
-        <Wrapper>
-            <HeaderLogo />
-            <HeaderNavbar />
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <HeaderNavWrapper>
+        <HeaderLogo />
+        <HeaderNavbar />
+      </HeaderNavWrapper>
+    </Wrapper>
+  );
 }
 
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
 
@@ -23,6 +23,18 @@ export const Wrapper = styled.div`
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media screen and (max-width: 880px) {
+    background-image: url('./img/kipon-game-bg-one.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+`
+
+export const HeaderNavWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 
 export default KiponHeader;
