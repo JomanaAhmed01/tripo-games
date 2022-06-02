@@ -28,6 +28,7 @@ export const Wrapper = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(218,57,43, 0.7);
+  margin-bottom: 100px;
 `
 
 export const TextWrapper = styled.div`
