@@ -6,6 +6,7 @@ import KiponGameScreenshots from '../components/KiponGame/KiponGameScreenshots'
 import KiponRating from '../components/KiponGame/KiponRating'
 import KiponChallenge from '../components/KiponGame/KiponChallenge'
 import KiponPlayNow from '../components/KiponGame/KiponPlayNow'
+import KiponFooter from '../components/KiponGame/KiponFooter'
 
 function KiponGameCompound() {
   return (
@@ -18,6 +19,7 @@ function KiponGameCompound() {
       <KiponRating />
       <KiponChallenge />
       <KiponPlayNow />
+      <KiponFooter />
     </Wrapper>
   );
 }
