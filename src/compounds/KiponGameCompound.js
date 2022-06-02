@@ -3,6 +3,7 @@ import styled from "styled-components"
 import KiponHeader from '../components/KiponGame/KiponHeader'
 import KiponGameCard from '../components/KiponGame/KiponGameCard'
 import KiponGameScreenshots from '../components/KiponGame/KiponGameScreenshots'
+import KiponRating from '../components/KiponGame/KiponRating'
 
 function KiponGameCompound() {
   return (
@@ -12,6 +13,7 @@ function KiponGameCompound() {
         <KiponGameCard />
       </CardWrapper>
       <KiponGameScreenshots />
+      <KiponRating />
     </Wrapper>
   );
 }
