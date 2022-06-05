@@ -4,6 +4,9 @@ import TreasureBoxHeader from '../components/TreasureBoxGame/TreasureBoxHeader'
 import TreasureBoxCardWrapper from '../components/TreasureBoxGame/TreasureBoxGameCard'
 import TreasureBoxGameScreenshots from '../components/TreasureBoxGame/TreasureBoxGameScreenshots'
 import TreasureBoxRating from '../components/TreasureBoxGame/TreasureBoxRating'
+import TreasureBoxSetSail from '../components/TreasureBoxGame/TreasureBoxSetSail'
+import TreasureBoxPlayNow from '../components/TreasureBoxGame/TreasureBoxPlayNow'
+import TreasureBoxFooter from '../components/TreasureBoxGame/TreasureBoxFooter'
 
 function TreasureBoxGameCompound() {
     return (
@@ -14,6 +17,9 @@ function TreasureBoxGameCompound() {
             </CardWrapper>
             <TreasureBoxGameScreenshots />
             <TreasureBoxRating />
+            <TreasureBoxSetSail />
+            <TreasureBoxPlayNow />
+            <TreasureBoxFooter />
         </Wrapper>
     );
 }
