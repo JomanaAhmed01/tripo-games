@@ -3,6 +3,7 @@ import styled from "styled-components"
 import RobotrixHeader from '../components/RobotrixGame/RobotrixHeader.js'
 import RobotrixGameCard from '../components/RobotrixGame/RobotrixGameCard.js'
 import RobotrixGameScreenshots from '../components/RobotrixGame/RobotrixGameScreenshots'
+import RobotrixRating from '../components/RobotrixGame/RobotrixRating.js'
 
 function RobotrixGameCompound() {
   return (
@@ -12,6 +13,7 @@ function RobotrixGameCompound() {
         <RobotrixGameCard />
       </CardWrapper>
       <RobotrixGameScreenshots />
+      <RobotrixRating />
     </Wrapper>
   );
 }
