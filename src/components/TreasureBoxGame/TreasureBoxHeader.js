@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (max-width: 880px) {
-    background-image: url('./img/treasure-box-game-bg-one.png');
+    background-image: url('./img/treasure-box-bg-one.png');
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
