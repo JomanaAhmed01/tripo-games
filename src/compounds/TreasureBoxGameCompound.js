@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components"
+import TreasureBoxHeader from '../components/TreasureBoxGame/TreasureBoxHeader'
 
 function TreasureBoxGameCompound() {
   return (
     <Wrapper>
-      cccccccccccccccccc
+      <TreasureBoxHeader />
     </Wrapper>
   );
 }
