@@ -3,6 +3,7 @@ import styled from "styled-components"
 import TreasureBoxHeader from '../components/TreasureBoxGame/TreasureBoxHeader'
 import TreasureBoxCardWrapper from '../components/TreasureBoxGame/TreasureBoxGameCard'
 import TreasureBoxGameScreenshots from '../components/TreasureBoxGame/TreasureBoxGameScreenshots'
+import TreasureBoxRating from '../components/TreasureBoxGame/TreasureBoxRating'
 
 function TreasureBoxGameCompound() {
     return (
@@ -12,6 +13,7 @@ function TreasureBoxGameCompound() {
                 <TreasureBoxCardWrapper />
             </CardWrapper>
             <TreasureBoxGameScreenshots />
+            <TreasureBoxRating />
         </Wrapper>
     );
 }
