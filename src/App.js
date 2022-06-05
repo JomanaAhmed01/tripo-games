@@ -5,7 +5,8 @@ import './App.css';
 // import ContactCompound from './compounds/ContactCompound';
 // import FooterCompound from './compounds/FooterCompound';
 // import KiponGameCompound from './compounds/KiponGameCompound'
-import RobotrixGameCompound from './compounds/RobotrixGameCompound'
+// import RobotrixGameCompound from './compounds/RobotrixGameCompound'
+import TreasureBoxGameCompound from './compounds/TreasureBoxGameCompound'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <ContactCompound />
       <FooterCompound /> */}
       {/* <KiponGameCompound /> */}
-      <RobotrixGameCompound />
+      {/* <RobotrixGameCompound /> */}
+      <TreasureBoxGameCompound />
     </div>
   );
 }
