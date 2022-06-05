@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
   margin-right: auto;
   padding-left: 100px;
   padding-bottom: 100px;
-  width: 100%;
+  width: 90%;
 
   @media screen and (max-width: 1070px) {
     padding-left: 0px;
@@ -86,7 +86,7 @@ export const ReviewsWrapper = styled.div`
     margin-top: 50px;
   }
 
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ export const TextWrapper = styled.div`
   width: 380px;
   height: 357px;
 
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 1024px) {
     border-bottom: 1px solid #272443;
     border-left: transparent;
     width: 100%;
@@ -118,7 +118,7 @@ export const ReviewText = styled.p`
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 1024px) {
     width: 80%;
     font-size: 25px;
     text-align: center;
@@ -133,7 +133,7 @@ export const ReviewAuthor = styled.p`
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 1024px) {
     font-size: 21px;
   }
 `
