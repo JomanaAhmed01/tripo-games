@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import TreasureBoxHeader from '../components/TreasureBoxGame/TreasureBoxHeader'
 import TreasureBoxCardWrapper from '../components/TreasureBoxGame/TreasureBoxGameCard'
+import TreasureBoxGameScreenshots from '../components/TreasureBoxGame/TreasureBoxGameScreenshots'
 
 function TreasureBoxGameCompound() {
     return (
@@ -10,6 +11,7 @@ function TreasureBoxGameCompound() {
             <CardWrapper>
                 <TreasureBoxCardWrapper />
             </CardWrapper>
+            <TreasureBoxGameScreenshots />
         </Wrapper>
     );
 }
