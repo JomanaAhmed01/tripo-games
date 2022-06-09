@@ -2,6 +2,8 @@
   /* text-align: center; */
   overflow-x: hidden;
   background-color: #f2f2f2;
+  overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
 }
 
 .App-logo {
