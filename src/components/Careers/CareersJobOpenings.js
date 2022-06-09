@@ -68,7 +68,6 @@ function CareersJobOpenings() {
 export const Wrapper = styled.div`
   background-color: #DA392B;
   width: 90%;
-  height: 828px; 
   margin-left: auto;
   margin-right: auto;
 
@@ -90,11 +89,11 @@ export const JobOpeningsWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 80px;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
-    background-color: #DA392B;
   }
 `
 
