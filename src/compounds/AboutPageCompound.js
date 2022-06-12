@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components"
+import AboutHeader from '../components/AboutPage/AboutHeader'
 
 function AboutPageCompound() {
     return (
         <Wrapper>
-          dddddddddddddddddddddd
+          <AboutHeader />
         </Wrapper>
     );
 }
