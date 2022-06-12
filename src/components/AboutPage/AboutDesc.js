@@ -16,6 +16,10 @@ function AboutDesc() {
 export const Wrapper = styled.div`
   margin-left: 100px;
   margin-top: 80px;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 30px;
+  }
 `
 
 export const HeaderText = styled.p`
@@ -24,6 +28,10 @@ export const HeaderText = styled.p`
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   width: 770px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export const Header = styled.p`
@@ -31,6 +39,15 @@ export const Header = styled.p`
   font-size: 50px;
   font-family: 'Dancing Script', cursive;
   width: 770px;
+  
+  @media screen and (max-width: 1024px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 875px) {
+    font-size: 35px;
+    width: 85%;
+  }
 `
 
 export default AboutDesc;
