@@ -4,6 +4,7 @@ import AboutHeader from '../components/AboutPage/AboutHeader'
 import AboutDesc from '../components/AboutPage/AboutDesc'
 import AboutCreatingGame from '../components/AboutPage/AboutCreatingGame'
 import WeAreAbout from '../components/AboutPage/WeAreAbout'
+import MeetTheFounders from '../components/AboutPage/MeetTheFounders'
 
 function AboutPageCompound() {
     return (
@@ -12,6 +13,7 @@ function AboutPageCompound() {
           <AboutDesc />
           <AboutCreatingGame />
           <WeAreAbout />
+          <MeetTheFounders />
         </Wrapper>
     );
 }
