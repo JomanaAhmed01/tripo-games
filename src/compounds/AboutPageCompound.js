@@ -5,6 +5,7 @@ import AboutDesc from '../components/AboutPage/AboutDesc'
 import AboutCreatingGame from '../components/AboutPage/AboutCreatingGame'
 import WeAreAbout from '../components/AboutPage/WeAreAbout'
 import MeetTheFounders from '../components/AboutPage/MeetTheFounders'
+import OurOffices from '../components/AboutPage/OurOffices'
 
 function AboutPageCompound() {
     return (
@@ -14,6 +15,7 @@ function AboutPageCompound() {
           <AboutCreatingGame />
           <WeAreAbout />
           <MeetTheFounders />
+          <OurOffices />
         </Wrapper>
     );
 }
