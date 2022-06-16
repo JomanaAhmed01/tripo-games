@@ -38,7 +38,7 @@ function WeAreAbout() {
 }
 
 export const Wrapper = styled.div`
-  background-image: url('./img/about-bg.png');
+  background-image: url('./img/we-are-about-bg.png');
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
