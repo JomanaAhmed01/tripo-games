@@ -8,7 +8,8 @@ import './App.css';
 // import RobotrixGameCompound from './compounds/RobotrixGameCompound'
 // import TreasureBoxGameCompound from './compounds/TreasureBoxGameCompound'
 // import CareersCompound from './compounds/CareersCompound'
-import AboutPageCompound from './compounds/AboutPageCompound'
+// import AboutPageCompound from './compounds/AboutPageCompound'
+import JobAppliesCompound from './compounds/JobAppliesCompound'
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <RobotrixGameCompound /> */}
       {/* <TreasureBoxGameCompound /> */}
       {/* <CareersCompound /> */}
-      <AboutPageCompound />
+      {/* <AboutPageCompound /> */}
+      <JobAppliesCompound />
     </div>
   );
 }
