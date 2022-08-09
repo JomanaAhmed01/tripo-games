@@ -29,7 +29,7 @@ function HeaderNavbar() {
           </GamesWrapper>
         </ItemTwo>
 
-        <ItemThree>
+        <ItemThree onClick={() => history.push('/CareersCompound')}>
           <TextThree>Careers</TextThree>
         </ItemThree>
 
