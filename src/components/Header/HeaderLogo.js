@@ -18,7 +18,6 @@ function HeaderLogo() {
 
 
 export const Wrapper = styled.div`
-  /* border: 3px solid green; */
   background-color: #DA392B;
   width: 166px;
   height: 59px;
@@ -29,7 +28,6 @@ export const Wrapper = styled.div`
 `
 
 export const Link = styled.a`
-  /* border: 3px solid yellow; */
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
   font-weight: bold;
