@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
 </style>
 
 function HeaderLogo() {
-    return (
-        <Wrapper>
-            <Link>Tripo Games</Link>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Link>Tripo Games</Link>
+    </Wrapper>
+  );
 }
 
 
