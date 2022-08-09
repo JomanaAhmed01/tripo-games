@@ -1,12 +1,16 @@
 import React from 'react';
+import { useHistory, Link } from 'react-router-dom'
 import styled from "styled-components"
 import { Menu } from '@styled-icons/feather/Menu'
 
 function HeaderNavbar() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <Items>
-        <ItemOne>
+        <ItemOne onClick={() => history.push('/')}>
           <TextOne>Home</TextOne>
         </ItemOne>
 
@@ -26,14 +30,17 @@ function HeaderNavbar() {
         </ItemTwo>
 
         <ItemThree>
-          <TextThree>Careers</TextThree>
+          <Link to='/CareersCompound'>
+            <TextThree>Careers</TextThree>
+          </Link>
         </ItemThree>
 
-        <ItemFour>
+
+        <ItemFour onClick={() => history.push('/AboutPageCompound')}>
           <TextFour>About</TextFour>
         </ItemFour>
 
-        <ItemFive>
+        <ItemFive onClick={() => history.push('/')}>
           <TextFive>Contact</TextFive>
         </ItemFive>
       </Items>
