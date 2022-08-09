@@ -1,39 +1,51 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom'
+import { useState } from "react"
 import styled from "styled-components"
 import { Menu } from '@styled-icons/feather/Menu'
 
 function HeaderNavbar() {
+
+  const [showGamesMenu, setShowGamesMenu] = useState(false)
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <Items>
-        <ItemOne>
+        <ItemOne onClick={() => history.push('/')}>
           <TextOne>Home</TextOne>
         </ItemOne>
 
-        <ItemTwo>
+        <ItemTwo onMouseOver={() => setShowGamesMenu(true)} onMouseOut={() => setShowGamesMenu(false)}>
           <TextTwo>Games</TextTwo>
-          <GamesWrapper>
-            <Game>
-              <GameName>Kipon</GameName>
-            </Game>
-            <Game>
-              <GameName>Robotrix</GameName>
-            </Game>
-            <Game>
-              <GameName>Treasure Box</GameName>
-            </Game>
-          </GamesWrapper>
+          {showGamesMenu ? (
+            <GamesWrapper>
+              <Game onClick={() => history.push('/KiponGameCompound')}>
+                <GameName>Kipon</GameName>
+              </Game>
+              <Game onClick={() => history.push('/RobotrixGameCompound')}>
+                <GameName>Robotrix</GameName>
+              </Game>
+              <Game onClick={() => history.push('/TreasureBoxGameCompound')}>
+                <GameName>Treasure Box</GameName>
+              </Game>
+            </GamesWrapper>
+          ) : (
+            null
+          )}
         </ItemTwo>
 
-        <ItemThree>
+        <ItemThree onClick={() => history.push('/CareersCompound')}>
           <TextThree>Careers</TextThree>
         </ItemThree>
 
-        <ItemFour>
+
+        <ItemFour onClick={() => history.push('/AboutPageCompound')}>
           <TextFour>About</TextFour>
         </ItemFour>
 
-        <ItemFive>
+        <ItemFive onClick={() => history.push('/')}>
           <TextFive>Contact</TextFive>
         </ItemFive>
       </Items>
@@ -77,18 +89,19 @@ export const ItemTwo = styled.div`
 `
 
 export const GamesWrapper = styled.div`
-  display: none;
   background-color: #FFFFFF;
-  margin-top: 40px;
-  border-radius: 10px;
-`
-
-export const Game = styled.div`
-  width: 105px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  width: 120px;
+  margin-top: 23px;
+`
+
+export const Game = styled.div`
+  width: 100%;
+  text-align: center;
   transition: 0.3s ease-in-out;
 
   :hover {

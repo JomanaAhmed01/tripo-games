@@ -4,8 +4,12 @@ import styled from "styled-components";
 function HeaderApps() {
   return (
     <Wrapper>
-      <ImageOne src='./img/app-store.png' />
-      <ImageTwo src='./img/google-play.png' />
+      <Link href='https://www.wix.com/templateslp/links' target='_blank'>
+        <ImageOne src='./img/app-store.png' />
+      </Link>
+      <Link href='https://www.wix.com/templateslp/links' target='_blank'>
+        <ImageTwo src='./img/google-play.png' />
+      </Link>
     </Wrapper>
   );
 }
@@ -26,6 +30,10 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 440px) {
     width: 220px;
   }
+`
+
+export const Link = styled.a`
+  
 `
 
 export const ImageOne = styled.img`
