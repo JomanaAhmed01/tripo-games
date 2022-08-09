@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import styled from "styled-components"
 import { Menu } from '@styled-icons/feather/Menu'
 
@@ -30,9 +30,7 @@ function HeaderNavbar() {
         </ItemTwo>
 
         <ItemThree>
-          <Link to='/CareersCompound'>
-            <TextThree>Careers</TextThree>
-          </Link>
+          <TextThree>Careers</TextThree>
         </ItemThree>
 
 
