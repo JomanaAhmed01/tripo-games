@@ -25,6 +25,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  cursor: pointer;
 `
 
 export const Link = styled.a`
