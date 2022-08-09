@@ -1,12 +1,16 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
 </style>
 
 function HeaderLogo() {
+
+  const history = useHistory()
+
   return (
-    <Wrapper>
+    <Wrapper onClick={() => history.push('/')}>
       <Link>Tripo Games</Link>
     </Wrapper>
   );
