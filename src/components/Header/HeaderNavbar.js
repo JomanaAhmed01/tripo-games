@@ -21,13 +21,13 @@ function HeaderNavbar() {
           <TextTwo>Games</TextTwo>
           {showGamesMenu ? (
             <GamesWrapper>
-              <Game>
+              <Game onClick={() => history.push('/KiponGameCompound')}>
                 <GameName>Kipon</GameName>
               </Game>
-              <Game>
+              <Game onClick={() => history.push('/RobotrixGameCompound')}>
                 <GameName>Robotrix</GameName>
               </Game>
-              <Game>
+              <Game onClick={() => history.push('/TreasureBoxGameCompound')}>
                 <GameName>Treasure Box</GameName>
               </Game>
             </GamesWrapper>
