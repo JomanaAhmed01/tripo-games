@@ -4,29 +4,35 @@ import styled from "styled-components"
 function GamesCards() {
   return (
     <Wrapper>
-      <Card>
-        <Image src='./img/kipon.png'></Image>
-        <TextWrapper>
-          <GameName>Kipon</GameName>
-          <GameType>Casual - Free</GameType>
-        </TextWrapper>
-      </Card>
+      <Link href='/KiponGameCompound'>
+        <Card>
+          <Image src='./img/kipon.png'></Image>
+          <TextWrapper>
+            <GameName>Kipon</GameName>
+            <GameType>Casual - Free</GameType>
+          </TextWrapper>
+        </Card>
+      </Link>
 
-      <Card>
-        <Image src='./img/robotrix.png'></Image>
-        <TextWrapper>
-          <GameName>Robotrix</GameName>
-          <GameType>RPG - Free</GameType>
-        </TextWrapper>
-      </Card>
+      <Link href='/RobotrixGameCompound'>
+        <Card>
+          <Image src='./img/robotrix.png'></Image>
+          <TextWrapper>
+            <GameName>Robotrix</GameName>
+            <GameType>RPG - Free</GameType>
+          </TextWrapper>
+        </Card>
+      </Link>
 
-      <Card>
-        <Image src='./img/treasure-box.png'></Image>
-        <TextWrapper>
-          <GameName>Treasure Box</GameName>
-          <GameType>Adventure - Free</GameType>
-        </TextWrapper>
-      </Card>
+      <Link href='/TreasureBoxGameCompound'>
+        <Card>
+          <Image src='./img/treasure-box.png'></Image>
+          <TextWrapper>
+            <GameName>Treasure Box</GameName>
+            <GameType>Adventure - Free</GameType>
+          </TextWrapper>
+        </Card>
+      </Link>
 
       <Card>
         <Image src='./img/explore-our-games.png'></Image>
@@ -108,6 +114,10 @@ export const GameType = styled.p`
   @media screen and (max-width: 880px) {
     font-size: 13px;
   }
+`
+
+export const Link = styled.a`
+  text-decoration: none;
 `
 
 export default GamesCards;
