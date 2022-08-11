@@ -11,45 +11,44 @@ import RobotrixGameCompound from './compounds/RobotrixGameCompound'
 import TreasureBoxGameCompound from './compounds/TreasureBoxGameCompound'
 import CareersCompound from './compounds/CareersCompound'
 import AboutPageCompound from './compounds/AboutPageCompound'
-import JobAppliesCompound from './compounds/JobAppliesCompound'
+import CommunityManagerCompound from './compounds/CommunityManagerCompound'
 
 function App() {
   return (
     <Router>
-        <Switch>
-          <Route exact path="/">
-            <HeaderCompound />
-            <GameCardsCompound />
-            <AboutCompound />
-            <ContactCompound />
-            <FooterCompound />
-          </Route>
+      <Switch>
+        <Route exact path="/">
+          <HeaderCompound />
+          <GameCardsCompound />
+          <AboutCompound />
+          <ContactCompound />
+          <FooterCompound />
+        </Route>
 
-          <Route path="/KiponGameCompound">
-            <KiponGameCompound />
-          </Route>
+        <Route path="/KiponGameCompound">
+          <KiponGameCompound />
+        </Route>
 
+        <Route path="/RobotrixGameCompound">
+          <RobotrixGameCompound />
+        </Route>
 
-          <Route path="/RobotrixGameCompound">
-            <RobotrixGameCompound />
-          </Route>
+        <Route path="/TreasureBoxGameCompound">
+          <TreasureBoxGameCompound />
+        </Route>
 
-          <Route path="/TreasureBoxGameCompound">
-            <TreasureBoxGameCompound />
-          </Route>
+        <Route path="/CareersCompound">
+          <CareersCompound />
+        </Route>
 
-          <Route path="/CareersCompound">
-            <CareersCompound />
-          </Route>
+        <Route path="/AboutPageCompound">
+          <AboutPageCompound />
+        </Route>
 
-          <Route path="/AboutPageCompound">
-            <AboutPageCompound />
-          </Route>
-
-          <Route path="/JobAppliesCompound">
-            <JobAppliesCompound />
-          </Route>
-        </Switch>
+        <Route path="/CommunityManagerCompound">
+          <CommunityManagerCompound />
+        </Route>
+      </Switch>
     </Router>
   );
 }
