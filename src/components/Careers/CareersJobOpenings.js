@@ -176,6 +176,7 @@ export const Button = styled.a`
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 10px;
+  text-decoration: none;
 
   :hover {
     background-color: #302d53;
