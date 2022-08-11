@@ -96,7 +96,7 @@ export const GamesWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 120px;
-  margin-top: 23px;
+  margin-top: 21px;
 `
 
 export const Game = styled.div`
@@ -115,16 +115,7 @@ export const GameName = styled.p`
 `
 
 export const ItemThree = styled.div`
-  width: 104px;
-  height: 60px;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  transition: 0.3s;
-
-  :hover {
-    background-color: #DA392B;
-    transition-duration: 0.5s;
-  }
+  
 `
 
 export const ItemFour = styled.div`
@@ -158,20 +149,38 @@ export const TextOne = styled.p`
   text-align: center;
   color: #FFFFFF;
   font-size: 16px;
+  width: 104px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -1px;
+  background-color: #DA392B;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom-left-radius: 10px;
 `
 
 export const TextTwo = styled.p`
   text-align: center;
   color: #272443;
   font-size: 16px;
+  padding-top: 2px;
 `
 
 export const TextThree = styled.p`
   text-align: center;
   color: #272443;
   font-size: 16px;
+  width: 104px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -1px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
 
   :hover {
+    background-color: #DA392B;
+    transition-duration: 0.5s;
     color: #FFFFFF;
   }
 `
@@ -180,8 +189,17 @@ export const TextFour = styled.p`
   text-align: center;
   color: #272443;
   font-size: 16px;
+  width: 104px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -1px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
 
   :hover {
+    background-color: #DA392B;
+    transition-duration: 0.5s;
     color: #FFFFFF;
   }
 `
@@ -189,8 +207,18 @@ export const TextFive = styled.p`
   text-align: center;
   color: #272443;
   font-size: 16px;
+  width: 104px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -1px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom-right-radius: 10px;
 
   :hover {
+    background-color: #DA392B;
+    transition-duration: 0.5s;
     color: #FFFFFF;
   }
 `
