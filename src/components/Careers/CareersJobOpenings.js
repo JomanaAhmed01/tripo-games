@@ -1,68 +1,68 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
 </style>
 
 function CareersJobOpenings() {
-    return (
-        <Wrapper>
-            <Header>Job Openings</Header>
-            <JobOpeningsWrapper>
-                <JobOpening>
-                    <Image src='./img/job-op-one.png' />
-                    <TextWrapper>
-                        <TextHeader>Community Manager</TextHeader>
-                        <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-                        <Desc>I'm a paragraph.
-                            Click here to add your own text and edit me.
-                            I’m a great place for you to tell a story and let your users know a little more about you.
-                        </Desc>
-                        <Button>Apply</Button>
-                    </TextWrapper>
-                </JobOpening>
+  return (
+    <Wrapper>
+      <Header>Job Openings</Header>
+      <JobOpeningsWrapper>
+        <JobOpening>
+          <Image src='./img/job-op-one.png' />
+          <TextWrapper>
+            <TextHeader>Community Manager</TextHeader>
+            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
+            <Desc>I'm a paragraph.
+              Click here to add your own text and edit me.
+              I’m a great place for you to tell a story and let your users know a little more about you.
+            </Desc>
+            <Button>Apply</Button>
+          </TextWrapper>
+        </JobOpening>
 
-                <JobOpening>
-                    <Image src='./img/jop-op-two.png' />
-                    <TextWrapper>
-                        <TextHeader>QA Tester</TextHeader>
-                        <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-                        <Desc>I'm a paragraph.
-                            Click here to add your own text and edit me.
-                            I’m a great place for you to tell a story and let your users know a little more about you.
-                        </Desc>
-                        <Button>Apply</Button>
-                    </TextWrapper>
-                </JobOpening>
+        <JobOpening>
+          <Image src='./img/jop-op-two.png' />
+          <TextWrapper>
+            <TextHeader>QA Tester</TextHeader>
+            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
+            <Desc>I'm a paragraph.
+              Click here to add your own text and edit me.
+              I’m a great place for you to tell a story and let your users know a little more about you.
+            </Desc>
+            <Button>Apply</Button>
+          </TextWrapper>
+        </JobOpening>
 
-                <JobOpening>
-                    <Image src='./img/job-op-three.png' />
-                    <TextWrapper>
-                        <TextHeader>Game Designer</TextHeader>
-                        <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-                        <Desc>I'm a paragraph.
-                            Click here to add your own text and edit me.
-                            I’m a great place for you to tell a story and let your users know a little more about you.
-                        </Desc>
-                        <Button>Apply</Button>
-                    </TextWrapper>
-                </JobOpening>
+        <JobOpening>
+          <Image src='./img/job-op-three.png' />
+          <TextWrapper>
+            <TextHeader>Game Designer</TextHeader>
+            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
+            <Desc>I'm a paragraph.
+              Click here to add your own text and edit me.
+              I’m a great place for you to tell a story and let your users know a little more about you.
+            </Desc>
+            <Button>Apply</Button>
+          </TextWrapper>
+        </JobOpening>
 
-                <JobOpening>
-                    <Image src='./img/jop-op-four.png' />
-                    <TextWrapper>
-                        <TextHeader>Game Developer</TextHeader>
-                        <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-                        <Desc>I'm a paragraph.
-                            Click here to add your own text and edit me.
-                            I’m a great place for you to tell a story and let your users know a little more about you.
-                        </Desc>
-                        <Button>Apply</Button>
-                    </TextWrapper>
-                </JobOpening>
-            </JobOpeningsWrapper>
-        </Wrapper>
-    );
+        <JobOpening>
+          <Image src='./img/jop-op-four.png' />
+          <TextWrapper>
+            <TextHeader>Game Developer</TextHeader>
+            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
+            <Desc>I'm a paragraph.
+              Click here to add your own text and edit me.
+              I’m a great place for you to tell a story and let your users know a little more about you.
+            </Desc>
+            <Button>Apply</Button>
+          </TextWrapper>
+        </JobOpening>
+      </JobOpeningsWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
