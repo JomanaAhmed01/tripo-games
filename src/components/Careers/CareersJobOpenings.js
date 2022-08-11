@@ -18,7 +18,7 @@ function CareersJobOpenings() {
               Click here to add your own text and edit me.
               I’m a great place for you to tell a story and let your users know a little more about you.
             </Desc>
-            <Button>Apply</Button>
+            <Button href='/CommunityManagerCompound'>Apply</Button>
           </TextWrapper>
         </JobOpening>
 
@@ -31,7 +31,7 @@ function CareersJobOpenings() {
               Click here to add your own text and edit me.
               I’m a great place for you to tell a story and let your users know a little more about you.
             </Desc>
-            <Button>Apply</Button>
+            <Button href='/QATesterCompound'>Apply</Button>
           </TextWrapper>
         </JobOpening>
 
@@ -44,7 +44,7 @@ function CareersJobOpenings() {
               Click here to add your own text and edit me.
               I’m a great place for you to tell a story and let your users know a little more about you.
             </Desc>
-            <Button>Apply</Button>
+            <Button href='/GameDesignerCompound'>Apply</Button>
           </TextWrapper>
         </JobOpening>
 
@@ -57,7 +57,7 @@ function CareersJobOpenings() {
               Click here to add your own text and edit me.
               I’m a great place for you to tell a story and let your users know a little more about you.
             </Desc>
-            <Button>Apply</Button>
+            <Button href='/GameDeveloperCompound'>Apply</Button>
           </TextWrapper>
         </JobOpening>
       </JobOpeningsWrapper>
