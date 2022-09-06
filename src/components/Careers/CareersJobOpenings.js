@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { jobs } from '../../Data/jobs'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
 </style>
@@ -9,7 +10,21 @@ function CareersJobOpenings() {
     <Wrapper>
       <Header>Job Openings</Header>
       <JobOpeningsWrapper>
-        <JobOpening>
+        {jobs.map((item) =>
+        (
+          <JobOpening>
+            <Image src={item.image} />
+            <TextWrapper>
+              <TextHeader>{item.title}</TextHeader>
+              <TextHeaderTwo>{item.location}</TextHeaderTwo>
+              <Desc>{item.Description}</Desc>
+              <Button href='/CommunityManagerCompound'>{item.apply}</Button>
+            </TextWrapper>
+          </JobOpening>
+        )
+        )}
+
+        {/* <JobOpening>
           <Image src='./img/job-op-one.png' />
           <TextWrapper>
             <TextHeader>Community Manager</TextHeader>
@@ -59,7 +74,7 @@ function CareersJobOpenings() {
             </Desc>
             <Button href='/GameDeveloperCompound'>Apply</Button>
           </TextWrapper>
-        </JobOpening>
+        </JobOpening> */}
       </JobOpeningsWrapper>
     </Wrapper>
   );
