@@ -1,0 +1,38 @@
+export const jobs = [
+    {
+        id: 1,
+        name: "community-manager",
+        image: "/img/job-op-one.png",
+        title: 'Community Manager',
+        location: 'San Francisco, CA',
+        Description: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you",
+        apply: 'Apply',
+    },
+    {
+        id: 2,
+        name: "QA-tester",
+        image: "/img/jop-op-two.png",
+        title: 'QA Tester',
+        location: 'San Francisco, CA',
+        Description: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you",
+        apply: 'Apply',
+    },
+    {
+        id: 3,
+        name: "game-designer",
+        image: "/img/job-op-three.png",
+        title: 'Game Designer',
+        location: 'San Francisco, CA',
+        Description: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you",
+        apply: 'Apply',
+    },
+    {
+        id: 4,
+        name: "game-developer",
+        image: "/img/jop-op-four.png",
+        title: 'Game Developer',
+        location: 'San Francisco, CA',
+        Description: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you",
+        apply: 'Apply',
+    },
+]
