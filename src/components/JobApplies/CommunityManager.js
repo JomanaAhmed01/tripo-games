@@ -14,7 +14,6 @@ function CommunityManager() {
 
   const [showJoinOurTeamSection, setShowJoinOurTeamSection] = useState(false)
 
-  const history = useHistory()
   return (
     <Wrapper>
       <>
