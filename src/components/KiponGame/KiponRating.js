@@ -22,16 +22,6 @@ function KiponRating() {
           </TextWrapper>
         )
         )}
-
-        {/* <TextWrapper>
-          <ReviewText>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</ReviewText>
-          <ReviewAuthor>Jose Pablo</ReviewAuthor>
-        </TextWrapper>
-
-        <TextWrapper>
-          <ReviewText>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</ReviewText>
-          <ReviewAuthor>Priya Gunga</ReviewAuthor>
-        </TextWrapper> */}
       </ReviewsWrapper>
     </Wrapper>
   );
