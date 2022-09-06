@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { reviews } from '../../Data/reviews'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
 </style>
@@ -13,20 +14,14 @@ function RobotrixRating() {
       </RatingWrapper>
 
       <ReviewsWrapper>
-        <TextWrapper>
-          <ReviewText>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</ReviewText>
-          <ReviewAuthor>Omar Zaine</ReviewAuthor>
-        </TextWrapper>
-
-        <TextWrapper>
-          <ReviewText>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</ReviewText>
-          <ReviewAuthor>Jay Jay</ReviewAuthor>
-        </TextWrapper>
-
-        <TextWrapper>
-          <ReviewText>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</ReviewText>
-          <ReviewAuthor>Danni Lopez</ReviewAuthor>
-        </TextWrapper>
+      {reviews.map((item) =>
+        (
+          <TextWrapper>
+            <ReviewText>{item.review}</ReviewText>
+            <ReviewAuthor>{item.writer}</ReviewAuthor>
+          </TextWrapper>
+        )
+        )}
       </ReviewsWrapper>
     </Wrapper>
   );
