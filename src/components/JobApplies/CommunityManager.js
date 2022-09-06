@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import { useState } from "react"
-import { useHistory } from 'react-router-dom'
 import HeaderLogo from '../Header/HeaderLogo'
 import HeaderNavbar from '../Header/HeaderNavbar'
 import FooterCompound from '../../compounds/FooterCompound'
