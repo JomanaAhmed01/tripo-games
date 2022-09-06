@@ -23,58 +23,6 @@ function CareersJobOpenings() {
           </JobOpening>
         )
         )}
-
-        {/* <JobOpening>
-          <Image src='./img/job-op-one.png' />
-          <TextWrapper>
-            <TextHeader>Community Manager</TextHeader>
-            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-            <Desc>I'm a paragraph.
-              Click here to add your own text and edit me.
-              I’m a great place for you to tell a story and let your users know a little more about you.
-            </Desc>
-            <Button href='/CommunityManagerCompound'>Apply</Button>
-          </TextWrapper>
-        </JobOpening>
-
-        <JobOpening>
-          <Image src='./img/jop-op-two.png' />
-          <TextWrapper>
-            <TextHeader>QA Tester</TextHeader>
-            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-            <Desc>I'm a paragraph.
-              Click here to add your own text and edit me.
-              I’m a great place for you to tell a story and let your users know a little more about you.
-            </Desc>
-            <Button href='/QATesterCompound'>Apply</Button>
-          </TextWrapper>
-        </JobOpening>
-
-        <JobOpening>
-          <Image src='./img/job-op-three.png' />
-          <TextWrapper>
-            <TextHeader>Game Designer</TextHeader>
-            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-            <Desc>I'm a paragraph.
-              Click here to add your own text and edit me.
-              I’m a great place for you to tell a story and let your users know a little more about you.
-            </Desc>
-            <Button href='/GameDesignerCompound'>Apply</Button>
-          </TextWrapper>
-        </JobOpening>
-
-        <JobOpening>
-          <Image src='./img/jop-op-four.png' />
-          <TextWrapper>
-            <TextHeader>Game Developer</TextHeader>
-            <TextHeaderTwo>San Francisco, CA</TextHeaderTwo>
-            <Desc>I'm a paragraph.
-              Click here to add your own text and edit me.
-              I’m a great place for you to tell a story and let your users know a little more about you.
-            </Desc>
-            <Button href='/GameDeveloperCompound'>Apply</Button>
-          </TextWrapper>
-        </JobOpening> */}
       </JobOpeningsWrapper>
     </Wrapper>
   );
