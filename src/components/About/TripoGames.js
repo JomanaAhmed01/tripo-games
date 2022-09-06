@@ -1,86 +1,67 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from "styled-components"
-import { games } from '../../Data/games'
 
 function AboutTripo() {
-
-  const [renderData, setRenderData] = useState(games)
-
   return (
     <Wrapper>
       <BackgroundImage src='./img/games-bg.png' />
       <CardsWrapperFirst>
-        {renderData
-          .filter(
-            (item) => item.type === "Casual - Free" || item.type === "RPG - Free"
-          )
-          .map((item) =>
-            item.id === '1' ? (
-              <CardOne>
-                <GameNameWrapper>
-                  <Image src='./img/kipon-icon.png' />
-                  <TextWrapper>
-                    <GameName>{item.title}</GameName>
-                    <GameType>{item.type}</GameType>
-                  </TextWrapper>
-                </GameNameWrapper>
-                <Text>{item.Description}</Text>
-                <AppsWrapper>
-                  <ImageOne src='./img/app-store.png' />
-                  <ImageTwo src='./img/google-play.png' />
-                </AppsWrapper>
-              </CardOne>
-            ) : null
-          )}
+        <CardOne>
+          <GameNameWrapper>
+            <Image src='./img/kipon-icon.png' />
+            <TextWrapper>
+              <GameName>Kipon</GameName>
+              <GameType>Casual - Free</GameType>
+            </TextWrapper>
+          </GameNameWrapper>
+          <Text>I'm a paragraph.
+            Click here to add your own text and edit me.
+            I’m a great place for you to tell a story and let your users know a little more about you.
+          </Text>
+          <AppsWrapper>
+            <ImageOne src='./img/app-store.png' />
+            <ImageTwo src='./img/google-play.png' />
+          </AppsWrapper>
+        </CardOne>
 
-        {renderData
-          .filter(
-            (item) => item.type === "RPG - Free" || item.type === "Advneture - Free"
-          )
-          .map((item) =>
-            item.id === '2' ? (
-              <CardOne>
-                <GameNameWrapper>
-                  <Image src='./img/robotrix-icon.png' />
-                  <TextWrapper>
-                    <GameName>{item.title}</GameName>
-                    <GameType>{item.type}</GameType>
-                  </TextWrapper>
-                </GameNameWrapper>
-                <Text>{item.Description}</Text>
-                <AppsWrapper>
-                  <ImageOne src='./img/app-store.png' />
-                  <ImageTwo src='./img/google-play.png' />
-                </AppsWrapper>
-              </CardOne>
-            ) : null
-          )}
+        <CardTwo>
+          <GameNameWrapper>
+            <Image src='./img/robotrix-icon.png' />
+            <TextWrapper>
+              <GameName>Robotrix</GameName>
+              <GameType>RPG - Free</GameType>
+            </TextWrapper>
+          </GameNameWrapper>
+          <Text>I'm a paragraph.
+            Click here to add your own text and edit me.
+            I’m a great place for you to tell a story and let your users know a little more about you.
+          </Text>
+          <AppsWrapper>
+            <ImageOne src='./img/app-store.png' />
+            <ImageTwo src='./img/google-play.png' />
+          </AppsWrapper>
+        </CardTwo>
       </CardsWrapperFirst>
 
       <CardsWrapperSecond>
-        {renderData
-          .filter(
-            (item) => item.type === "Adventure - Free" || item.type === "Casual - Free"
-          )
-          .map((item) =>
-            item.id === '3' ? (
-              <CardOne>
-                <GameNameWrapper>
-                  <Image src='./img/treasure-box-icon.png' />
-                  <TextWrapper>
-                    <GameName>{item.title}</GameName>
-                    <GameType>{item.type}</GameType>
-                  </TextWrapper>
-                </GameNameWrapper>
-                <Text>{item.Description}</Text>
-                <AppsWrapper>
-                  <ImageOne src='./img/app-store.png' />
-                  <ImageTwo src='./img/google-play.png' />
-                </AppsWrapper>
-              </CardOne>
-            ) : null
-          )}
-          
+        <CardOne>
+          <GameNameWrapper>
+            <ImageCardThree src='./img/treasure-box-icon.png' />
+            <TextWrapper>
+              <GameNameCardThree>Treasure Box</GameNameCardThree>
+              <GameTypeCardThree>Adventure - Free</GameTypeCardThree>
+            </TextWrapper>
+          </GameNameWrapper>
+          <Text>I'm a paragraph.
+            Click here to add your own text and edit me.
+            I’m a great place for you to tell a story and let your users know a little more about you.
+          </Text>
+          <AppsWrapper>
+            <ImageOne src='./img/app-store.png' />
+            <ImageTwo src='./img/google-play.png' />
+          </AppsWrapper>
+        </CardOne>
+
         <Icon src='./img/games-icon.png' />
       </CardsWrapperSecond>
     </Wrapper>
