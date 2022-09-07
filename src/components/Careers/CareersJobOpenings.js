@@ -12,7 +12,7 @@ function CareersJobOpenings() {
       <JobOpeningsWrapper>
         {jobs.map((item) =>
         (
-          <JobOpening>
+          <JobOpening key={item.id}>
             <Image src={item.image} />
             <TextWrapper>
               <TextHeader>{item.title}</TextHeader>

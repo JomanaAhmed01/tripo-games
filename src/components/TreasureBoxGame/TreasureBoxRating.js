@@ -16,7 +16,7 @@ function TreasureBoxRating() {
       <ReviewsWrapper>
         {reviews.map((item) =>
         (
-          <TextWrapper>
+          <TextWrapper key={item.id}>
             <ReviewText>{item.review}</ReviewText>
             <ReviewAuthor>{item.writer}</ReviewAuthor>
           </TextWrapper>
