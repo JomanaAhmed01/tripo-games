@@ -9,6 +9,7 @@ function HeaderNavbar() {
 
   const [showGamesMenu, setShowGamesMenu] = useState(false)
   const [showGamesMenuResponsive, setShowGamesMenuResponsive] = useState(false)
+  const [showMenuGames, setShowMenuGames] = useState(false)
 
   const history = useHistory()
 
@@ -57,7 +58,17 @@ function HeaderNavbar() {
           <CloseIcon onClick={() => setShowGamesMenuResponsive(false)} />
           <MenuItemsWrapper>
             <MenuItem onClick={() => history.push('/')}>Home</MenuItem>
-            <MenuItem>Games</MenuItem>
+            <MenuItem onClick={() => setShowMenuGames(true)}>Games</MenuItem>
+            {showMenuGames ? (
+              <MenuGamesWrapper>
+                <CloseIconGamesMenu onClick={() => setShowMenuGames(false)} />
+                <MenuGameName onClick={() => history.push('/KiponGameCompound')}>Kipon</MenuGameName>
+                <MenuGameName onClick={() => history.push('/RobotrixGameCompound')}>Robotrix</MenuGameName>
+                <MenuGameName onClick={() => history.push('/TreasureBoxGameCompound')}>Treasure Box</MenuGameName>
+              </MenuGamesWrapper>
+            ) : (
+              null
+            )}
             <MenuItem onClick={() => history.push('/CareersCompound')}>Careers</MenuItem>
             <MenuItem onClick={() => history.push('/AboutPageCompound')}>About</MenuItem>
             <MenuItem onClick={() => history.push('/ContactCompound')}>Contact</MenuItem>
@@ -275,6 +286,37 @@ export const MenuItem = styled.p`
 
   @media screen and (max-width: 470px) {
     font-size: 18px;
+  }
+`
+
+export const MenuGamesWrapper = styled.div`
+  
+`
+
+export const MenuGameName = styled.p`
+  color: #272443;
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-align: center;
+
+  :hover {
+    color: #DA392B;
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 16px;
+  }
+`
+
+export const CloseIconGamesMenu = styled(Close)`
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 95px;
+
+  @media screen and (max-width: 470px) {
+    width: 20px;
+    height: 20px;
   }
 `
 
