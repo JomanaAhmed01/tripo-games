@@ -3,10 +3,12 @@ import { useHistory } from 'react-router-dom'
 import { useState } from "react"
 import styled from "styled-components"
 import { Menu } from '@styled-icons/feather/Menu'
+import { Close } from '@styled-icons/ionicons-outline/Close'
 
 function HeaderNavbar() {
 
   const [showGamesMenu, setShowGamesMenu] = useState(false)
+  const [showGamesMenuResponsive, setShowGamesMenuResponsive] = useState(false)
 
   const history = useHistory()
 
@@ -49,7 +51,23 @@ function HeaderNavbar() {
           <TextFive>Contact</TextFive>
         </ItemFive>
       </Items>
-      <MenuIcon />
+
+      {showGamesMenuResponsive ? (
+        <MenuWrapper>
+          <CloseIcon onClick={() => setShowGamesMenuResponsive(false)} />
+          <MenuItemsWrapper>
+            <MenuItem>Home</MenuItem>
+            <MenuItem>Games</MenuItem>
+            <MenuItem>Careers</MenuItem>
+            <MenuItem>About</MenuItem>
+            <MenuItem>Contact</MenuItem>
+          </MenuItemsWrapper>
+        </MenuWrapper>
+      ) : (
+        <>
+          <MenuIcon onClick={() => setShowGamesMenuResponsive(true)} />
+        </>
+      )}
     </Wrapper>
   );
 }
@@ -220,6 +238,54 @@ export const TextFive = styled.p`
     background-color: #DA392B;
     transition-duration: 0.5s;
     color: #FFFFFF;
+  }
+`
+
+export const MenuWrapper = styled.div`
+  background-color: #FFFFFF;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media screen and (max-width: 470px) {
+    width: 170px;
+  }
+`
+
+export const MenuItemsWrapper = styled.div`
+  margin-top: -20px;
+`
+
+export const MenuItem = styled.p`
+  color: #272443;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+
+  :hover {
+    color: #DA392B;
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 18px;
+  }
+`
+
+export const CloseIcon = styled(Close)`
+  width: 40px;
+  height: 40px;
+  margin-right: -130px;
+  padding-top: 10px;
+
+  @media screen and (max-width: 470px) {
+    width: 30px;
+    height: 30px;
   }
 `
 
