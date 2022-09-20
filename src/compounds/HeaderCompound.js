@@ -34,8 +34,8 @@ export const HeaderWrapper = styled.div`
   padding-right: 100px;
 
   @media screen and (max-width: 1024px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 `
 
