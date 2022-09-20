@@ -56,11 +56,11 @@ function HeaderNavbar() {
         <MenuWrapper>
           <CloseIcon onClick={() => setShowGamesMenuResponsive(false)} />
           <MenuItemsWrapper>
-            <MenuItem>Home</MenuItem>
+            <MenuItem onClick={() => history.push('/')}>Home</MenuItem>
             <MenuItem>Games</MenuItem>
-            <MenuItem>Careers</MenuItem>
-            <MenuItem>About</MenuItem>
-            <MenuItem>Contact</MenuItem>
+            <MenuItem onClick={() => history.push('/CareersCompound')}>Careers</MenuItem>
+            <MenuItem onClick={() => history.push('/AboutPageCompound')}>About</MenuItem>
+            <MenuItem onClick={() => history.push('/ContactCompound')}>Contact</MenuItem>
           </MenuItemsWrapper>
         </MenuWrapper>
       ) : (
@@ -252,6 +252,7 @@ export const MenuWrapper = styled.div`
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
 
   @media screen and (max-width: 470px) {
     width: 170px;
