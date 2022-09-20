@@ -5,15 +5,15 @@ import GetInTouch from '../components/contact/GetInTouch'
 import SubNewsLetter from '../components/contact/SubNewsLetter'
 
 function ContactCompound() {
-    return (
-        <Wrapper>
-            <JoinTeam />
-            <ContactWrapper>
-                <GetInTouch />
-                <SubNewsLetter />
-            </ContactWrapper>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <JoinTeam />
+      <ContactWrapper>
+        <GetInTouch />
+        <SubNewsLetter />
+      </ContactWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
