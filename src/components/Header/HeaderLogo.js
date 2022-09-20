@@ -30,6 +30,10 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1024px) {
     margin-left: 30px;
   }
+
+  @media screen and (max-width: 470px) {
+    margin-left: 10px;
+  }
 `
 
 export const Link = styled.a`
