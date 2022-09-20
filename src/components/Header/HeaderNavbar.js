@@ -253,17 +253,22 @@ export const TextFive = styled.p`
 `
 
 export const MenuWrapper = styled.div`
-  background-color: #FFFFFF;
-  width: 200px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 100;
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: initial;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
+  }
 
   @media screen and (max-width: 470px) {
     width: 170px;
