@@ -48,6 +48,10 @@ function App() {
           <AboutPageCompound />
         </Route>
 
+        <Route path="/ContactCompound">
+          <ContactCompound />
+        </Route>
+
         <Route path="/CommunityManagerCompound">
           <CommunityManagerCompound />
         </Route>

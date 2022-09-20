@@ -18,6 +18,8 @@ function CareersHeader() {
 export const Wrapper = styled.div`
   padding-left: 100px;
   padding-right: 100px;
+  position: relative;
+  z-index: 1;
 
   @media screen and (max-width: 1024px) {
     padding-left: 30px;

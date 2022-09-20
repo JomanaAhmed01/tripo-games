@@ -26,6 +26,14 @@ export const Wrapper = styled.div`
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width: 470px) {
+    margin-left: 10px;
+  }
 `
 
 export const Link = styled.a`

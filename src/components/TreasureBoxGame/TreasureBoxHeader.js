@@ -35,6 +35,8 @@ export const Wrapper = styled.div`
 export const HeaderNavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 100;
 `
 
 export default TreasureBoxHeader;
