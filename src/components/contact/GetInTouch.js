@@ -49,7 +49,7 @@ export const Wrapper = styled.div`
   bottom: 250px;
   /* margin-right: -150px; */
   padding-left: 30px;
-  /* padding-right: 20px; */
+  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 15px;
