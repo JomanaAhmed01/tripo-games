@@ -47,17 +47,22 @@ export const Wrapper = styled.div`
   background-color: #ffffff;
   position: relative;
   bottom: 250px;
-  left: 150px;
+  /* margin-right: -150px; */
   padding-left: 30px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 15px;
+  /* border: 3px solid red; */
+
+  @media screen and (max-width: 1180) {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
+    height: 100vh;
+  }
 
   @media screen and (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0px;
     width: 50%;
   }
 
