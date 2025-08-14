@@ -57,8 +57,8 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 1180) {
     display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center; /* vertical center */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
   }
 
