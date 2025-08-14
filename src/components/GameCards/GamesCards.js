@@ -42,12 +42,15 @@ function GamesCards() {
 }
 
 export const Wrapper = styled.div`
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
   display: flex;
   justify-content: space-between;
   position: relative;
   bottom: 100px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (max-width: 1120px) {
     padding-left: 40px;
