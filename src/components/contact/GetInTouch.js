@@ -55,11 +55,11 @@ export const Wrapper = styled.div`
   border-radius: 15px;
   /* border: 3px solid red; */
 
-  @media screen and (max-width: 1180) {
-    display: flex;
+  @media screen and (max-width: 1180px) {
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; */
   }
 
   @media screen and (max-width: 768px) {
