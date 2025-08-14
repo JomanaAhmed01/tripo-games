@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
-import JoinTeam from '../components/contact/JoinTeam'
-import GetInTouch from '../components/contact/GetInTouch'
-import SubNewsLetter from '../components/contact/SubNewsLetter'
+import JoinTeam from "../components/contact/JoinTeam"
+import GetInTouch from "../components/contact/GetInTouch"
+import SubNewsLetter from "../components/contact/SubNewsLetter"
 
 function ContactCompound() {
   return (
@@ -13,24 +13,10 @@ function ContactCompound() {
         <SubNewsLetter />
       </ContactWrapper>
     </Wrapper>
-  );
+  )
 }
 
-export const Wrapper = styled.div`
-  
-`
-
-export const HeaderWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-
-  @media screen and (max-width: 1024px) {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-`
+export const Wrapper = styled.div``
 
 export const ContactWrapper = styled.div`
   display: flex;
@@ -41,4 +27,4 @@ export const ContactWrapper = styled.div`
   }
 `
 
-export default ContactCompound;
+export default ContactCompound
