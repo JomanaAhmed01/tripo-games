@@ -24,13 +24,13 @@ function HeaderNavbar() {
           <TextTwo>Games</TextTwo>
           {showGamesMenu ? (
             <GamesWrapper>
-              <Game onClick={() => history.push('/KiponGameCompound')}>
+              <Game onClick={() => history.push('/')}>
                 <GameName>Kipon</GameName>
               </Game>
-              <Game onClick={() => history.push('/RobotrixGameCompound')}>
+              <Game onClick={() => history.push('/')}>
                 <GameName>Robotrix</GameName>
               </Game>
-              <Game onClick={() => history.push('/TreasureBoxGameCompound')}>
+              <Game onClick={() => history.push('/')}>
                 <GameName>Treasure Box</GameName>
               </Game>
             </GamesWrapper>
@@ -39,12 +39,12 @@ function HeaderNavbar() {
           )}
         </ItemTwo>
 
-        <ItemThree onClick={() => history.push('/CareersCompound')}>
+        <ItemThree onClick={() => history.push('/')}>
           <TextThree>Careers</TextThree>
         </ItemThree>
 
 
-        <ItemFour onClick={() => history.push('/AboutPageCompound')}>
+        <ItemFour onClick={() => history.push('/')}>
           <TextFour>About</TextFour>
         </ItemFour>
 
@@ -62,16 +62,16 @@ function HeaderNavbar() {
             {showMenuGames ? (
               <MenuGamesWrapper>
                 <CloseIconGamesMenu onClick={() => setShowMenuGames(false)} />
-                <MenuGameName onClick={() => history.push('/KiponGameCompound')}>Kipon</MenuGameName>
-                <MenuGameName onClick={() => history.push('/RobotrixGameCompound')}>Robotrix</MenuGameName>
-                <MenuGameName onClick={() => history.push('/TreasureBoxGameCompound')}>Treasure Box</MenuGameName>
+                <MenuGameName onClick={() => history.push('/')}>Kipon</MenuGameName>
+                <MenuGameName onClick={() => history.push('/')}>Robotrix</MenuGameName>
+                <MenuGameName onClick={() => history.push('/')}>Treasure Box</MenuGameName>
               </MenuGamesWrapper>
             ) : (
               null
             )}
-            <MenuItem onClick={() => history.push('/CareersCompound')}>Careers</MenuItem>
-            <MenuItem onClick={() => history.push('/AboutPageCompound')}>About</MenuItem>
-            <MenuItem onClick={() => history.push('/ContactCompound')}>Contact</MenuItem>
+            <MenuItem onClick={() => history.push('/')}>Careers</MenuItem>
+            <MenuItem onClick={() => history.push('/')}>About</MenuItem>
+            <MenuItem onClick={() => history.push('/')}>Contact</MenuItem>
           </MenuItemsWrapper>
         </MenuWrapper>
       ) : (
