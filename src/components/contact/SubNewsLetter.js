@@ -1,22 +1,21 @@
-import React from 'react';
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 function SubNewsLetter() {
-    return (
-        <Wrapper>
-            <Header>Subscribe to Our Newsletter</Header>
-            <EmailFormWrapper>
-                <EmailLabel>Email *</EmailLabel>
-                <EmailForm type='text' />
-                <JoinBtn>Join</JoinBtn>
-            </EmailFormWrapper>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header>Subscribe to Our Newsletter</Header>
+      <EmailFormWrapper>
+        <EmailLabel>Email *</EmailLabel>
+        <EmailForm type="text" />
+        <JoinBtn>Join</JoinBtn>
+      </EmailFormWrapper>
+    </Wrapper>
+  )
 }
 
-
 export const Wrapper = styled.div`
-  background-color: #DA392B;
+  background-color: #da392b;
   width: 388px;
   height: 210px;
   border-radius: 15px;
@@ -38,9 +37,9 @@ export const Wrapper = styled.div`
 `
 
 export const Header = styled.p`
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 21px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 
   @media screen and (max-width: 530px) {
@@ -57,7 +56,7 @@ export const EmailFormWrapper = styled.div`
 
 export const EmailLabel = styled.label`
   display: block;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
   font-size: 16px;
 
@@ -86,7 +85,7 @@ export const EmailForm = styled.input`
 `
 
 export const JoinBtn = styled.button`
-  background-color: #FCFF72;
+  background-color: #fcff72;
   border-color: transparent;
   border-radius: 10px;
   width: 79px;
@@ -100,4 +99,4 @@ export const JoinBtn = styled.button`
   }
 `
 
-export default SubNewsLetter;
+export default SubNewsLetter
