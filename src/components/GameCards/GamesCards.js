@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 
 function GamesCards() {
   return (
     <Wrapper>
-      <Link href='/'>
+      <Link href="/">
         <Card>
-          <Image src='./img/kipon.png'></Image>
+          <Image src="./img/kipon.png"></Image>
           <TextWrapper>
             <GameName>Kipon</GameName>
             <GameType>Casual - Free</GameType>
@@ -14,9 +14,9 @@ function GamesCards() {
         </Card>
       </Link>
 
-      <Link href='/'>
+      <Link href="/">
         <Card>
-          <Image src='./img/robotrix.png'></Image>
+          <Image src="./img/robotrix.png"></Image>
           <TextWrapper>
             <GameName>Robotrix</GameName>
             <GameType>RPG - Free</GameType>
@@ -24,9 +24,9 @@ function GamesCards() {
         </Card>
       </Link>
 
-      <Link href='/'>
+      <Link href="/">
         <Card>
-          <Image src='./img/treasure-box.png'></Image>
+          <Image src="./img/treasure-box.png"></Image>
           <TextWrapper>
             <GameName>Treasure Box</GameName>
             <GameType>Adventure - Free</GameType>
@@ -35,12 +35,11 @@ function GamesCards() {
       </Link>
 
       <Card>
-        <Image src='./img/explore-our-games.png'></Image>
+        <Image src="./img/explore-our-games.png"></Image>
       </Card>
     </Wrapper>
-  );
+  )
 }
-
 
 export const Wrapper = styled.div`
   padding-left: 100px;
@@ -67,7 +66,7 @@ export const Card = styled.div`
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 
   :hover {
     transform: scale(1.1);
@@ -98,7 +97,7 @@ export const TextWrapper = styled.div`
 `
 
 export const GameName = styled.p`
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 24px;
 
@@ -108,7 +107,7 @@ export const GameName = styled.p`
 `
 
 export const GameType = styled.p`
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
 
   @media screen and (max-width: 880px) {
@@ -120,4 +119,4 @@ export const Link = styled.a`
   text-decoration: none;
 `
 
-export default GamesCards;
+export default GamesCards
