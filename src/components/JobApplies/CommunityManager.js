@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import { useState } from "react"
 import HeaderLogo from '../Header/HeaderLogo'
-import HeaderNavbar from '../Header/HeaderNavbar'
+// import HeaderNavbar from '../Header/HeaderNavbar'
 import FooterCompound from '../../compounds/FooterCompound'
 import { Close } from '@styled-icons/evil/Close'
 <style>
@@ -89,7 +89,7 @@ function CommunityManager() {
           <>
             <HeaderWrapper>
               <HeaderLogo />
-              <HeaderNavbar />
+              {/* <HeaderNavbar /> */}
             </HeaderWrapper>
 
               <CommManager>

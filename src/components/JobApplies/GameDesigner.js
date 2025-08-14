@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import HeaderLogo from '../Header/HeaderLogo'
-import HeaderNavbar from '../Header/HeaderNavbar'
+// import HeaderNavbar from '../Header/HeaderNavbar'
 import FooterCompound from '../../compounds/FooterCompound'
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
@@ -12,7 +12,7 @@ function GameDesigner() {
         <Wrapper>
             <HeaderWrapper>
                 <HeaderLogo />
-                <HeaderNavbar />
+                {/* <HeaderNavbar /> */}
             </HeaderWrapper>
 
             <CommManager>

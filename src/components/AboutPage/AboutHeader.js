@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import HeaderLogo from "../Header/HeaderLogo"
-import HeaderNavbar from "../Header/HeaderNavbar"
+// import HeaderNavbar from "../Header/HeaderNavbar"
 
 function AboutHeader() {
   return (
     <Wrapper>
       <HeaderWrapper>
         <HeaderLogo />
-        <HeaderNavbar />
+        {/* <HeaderNavbar /> */}
       </HeaderWrapper>
     </Wrapper>
   )
