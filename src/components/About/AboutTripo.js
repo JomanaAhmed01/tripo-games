@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 
 function AboutTripo() {
-    return (
-        <Wrapper>
-          <Header>About Tripo</Header>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header>About Tripo</Header>
+    </Wrapper>
+  )
 }
 
-export const Wrapper = styled.div`
-
-`
+export const Wrapper = styled.div``
 
 export const Header = styled.h3`
   text-align: center;
@@ -22,4 +20,4 @@ export const Header = styled.h3`
   }
 `
 
-export default AboutTripo;
+export default AboutTripo
