@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from "styled-components"
-import HeaderLogo from '../components/Header/HeaderLogo'
-// import HeaderNavbar from '../components/Header/HeaderNavbar'
 import JoinTeam from '../components/contact/JoinTeam'
 import GetInTouch from '../components/contact/GetInTouch'
 import SubNewsLetter from '../components/contact/SubNewsLetter'
@@ -9,10 +7,6 @@ import SubNewsLetter from '../components/contact/SubNewsLetter'
 function ContactCompound() {
   return (
     <Wrapper>
-      <HeaderWrapper>
-        <HeaderLogo />
-        {/* <HeaderNavbar /> */}
-      </HeaderWrapper>
       <JoinTeam />
       <ContactWrapper>
         <GetInTouch />
