@@ -1,44 +1,46 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 
 function AboutTripo() {
   return (
     <Wrapper>
-      <BackgroundImage src='./img/games-bg.png' />
+      <BackgroundImage src="./img/games-bg.png" />
       <CardsWrapperFirst>
         <CardOne>
           <GameNameWrapper>
-            <Image src='./img/kipon-icon.png' />
+            <Image src="./img/kipon-icon.png" />
             <TextWrapper>
               <GameName>Kipon</GameName>
               <GameType>Casual - Free</GameType>
             </TextWrapper>
           </GameNameWrapper>
-          <Text>I'm a paragraph.
-            Click here to add your own text and edit me.
-            I’m a great place for you to tell a story and let your users know a little more about you.
+          <Text>
+            I'm a paragraph. Click here to add your own text and edit me. I’m a
+            great place for you to tell a story and let your users know a little
+            more about you.
           </Text>
           <AppsWrapper>
-            <ImageOne src='./img/app-store.png' />
-            <ImageTwo src='./img/google-play.png' />
+            <ImageOne src="./img/app-store.png" />
+            <ImageTwo src="./img/google-play.png" />
           </AppsWrapper>
         </CardOne>
 
         <CardTwo>
           <GameNameWrapper>
-            <Image src='./img/robotrix-icon.png' />
+            <Image src="./img/robotrix-icon.png" />
             <TextWrapper>
               <GameName>Robotrix</GameName>
               <GameType>RPG - Free</GameType>
             </TextWrapper>
           </GameNameWrapper>
-          <Text>I'm a paragraph.
-            Click here to add your own text and edit me.
-            I’m a great place for you to tell a story and let your users know a little more about you.
+          <Text>
+            I'm a paragraph. Click here to add your own text and edit me. I’m a
+            great place for you to tell a story and let your users know a little
+            more about you.
           </Text>
           <AppsWrapper>
-            <ImageOne src='./img/app-store.png' />
-            <ImageTwo src='./img/google-play.png' />
+            <ImageOne src="./img/app-store.png" />
+            <ImageTwo src="./img/google-play.png" />
           </AppsWrapper>
         </CardTwo>
       </CardsWrapperFirst>
@@ -46,30 +48,31 @@ function AboutTripo() {
       <CardsWrapperSecond>
         <CardOne>
           <GameNameWrapper>
-            <ImageCardThree src='./img/treasure-box-icon.png' />
+            <ImageCardThree src="./img/treasure-box-icon.png" />
             <TextWrapper>
               <GameNameCardThree>Treasure Box</GameNameCardThree>
               <GameTypeCardThree>Adventure - Free</GameTypeCardThree>
             </TextWrapper>
           </GameNameWrapper>
-          <Text>I'm a paragraph.
-            Click here to add your own text and edit me.
-            I’m a great place for you to tell a story and let your users know a little more about you.
+          <Text>
+            I'm a paragraph. Click here to add your own text and edit me. I’m a
+            great place for you to tell a story and let your users know a little
+            more about you.
           </Text>
           <AppsWrapper>
-            <ImageOne src='./img/app-store.png' />
-            <ImageTwo src='./img/google-play.png' />
+            <ImageOne src="./img/app-store.png" />
+            <ImageTwo src="./img/google-play.png" />
           </AppsWrapper>
         </CardOne>
 
-        <Icon src='./img/games-icon.png' />
+        <Icon src="./img/games-icon.png" />
       </CardsWrapperSecond>
     </Wrapper>
-  );
+  )
 }
 
 export const Wrapper = styled.div`
-  background-image: url('./img/games-bg.png');
+  background-image: url("./img/games-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 100px;
@@ -118,7 +121,7 @@ export const CardsWrapperSecond = styled.div`
 
 export const CardOne = styled.div`
   width: 330px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -131,7 +134,7 @@ export const CardOne = styled.div`
 
 export const CardTwo = styled.div`
   width: 330px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -157,7 +160,7 @@ export const Image = styled.img`
   width: 78px;
   height: 78px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 7px solid #FFFFFF;
+  border: 7px solid #ffffff;
 `
 
 export const ImageCardThree = styled.img`
@@ -165,7 +168,7 @@ export const ImageCardThree = styled.img`
   width: 78px;
   height: 78px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 7px solid #FFFFFF;
+  border: 7px solid #ffffff;
   /* margin-left: 10px; */
 `
 
@@ -177,7 +180,7 @@ export const TextWrapper = styled.div`
 export const GameName = styled.p`
   color: #272443;
   font-size: 21px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-left: -20px;
 `
@@ -185,7 +188,7 @@ export const GameName = styled.p`
 export const GameType = styled.p`
   color: #272443;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: -10px;
   margin-left: -20px;
 `
@@ -193,7 +196,7 @@ export const GameType = styled.p`
 export const GameNameCardThree = styled.p`
   color: #272443;
   font-size: 21px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   /* margin-left: 10px; */
 `
@@ -201,7 +204,7 @@ export const GameNameCardThree = styled.p`
 export const GameTypeCardThree = styled.p`
   color: #272443;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: -10px;
   margin-left: 5px;
 `
@@ -247,4 +250,4 @@ export const Icon = styled.img`
   }
 `
 
-export default AboutTripo;
+export default AboutTripo

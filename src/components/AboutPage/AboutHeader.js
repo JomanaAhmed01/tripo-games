@@ -1,22 +1,20 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
-import HeaderLogo from '../Header/HeaderLogo'
-import HeaderNavbar from '../Header/HeaderNavbar'
+import HeaderLogo from "../Header/HeaderLogo"
+import HeaderNavbar from "../Header/HeaderNavbar"
 
 function AboutHeader() {
-    return (
-        <Wrapper>
-            <HeaderWrapper>
-                <HeaderLogo />
-                <HeaderNavbar />
-            </HeaderWrapper>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <HeaderWrapper>
+        <HeaderLogo />
+        <HeaderNavbar />
+      </HeaderWrapper>
+    </Wrapper>
+  )
 }
 
-export const Wrapper = styled.div`
-
-`
+export const Wrapper = styled.div``
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -30,4 +28,4 @@ export const HeaderWrapper = styled.div`
   }
 `
 
-export default AboutHeader;
+export default AboutHeader
