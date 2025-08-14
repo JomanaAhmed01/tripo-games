@@ -29,6 +29,11 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-top: -150px;
+
+  @media screen and (max-width: 1180px) {
+    margin-top: 0px;
+  }
 `
 
 export const FooterWrapper = styled.div`
