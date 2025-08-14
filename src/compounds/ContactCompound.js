@@ -20,10 +20,12 @@ export const Wrapper = styled.div``
 
 export const ContactWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media screen and (max-width: 1180px) {
     flex-direction: column;
+    align-items: center;
+    border: 3px solid red;
   }
 `
 
