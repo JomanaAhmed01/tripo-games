@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
   padding-left: 25px;
   margin-right: 100px;
   margin-bottom: 150px;
-  margin-top: 230px;
+  margin-top: 180px;
 
   @media screen and (max-width: 1180px) {
     margin-left: auto;
