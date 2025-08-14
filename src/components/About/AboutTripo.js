@@ -9,7 +9,13 @@ function AboutTripo() {
   )
 }
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div`
+  margin-top: -100px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0px;
+  }
+`
 
 export const Header = styled.h3`
   text-align: center;
