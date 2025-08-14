@@ -7,8 +7,10 @@ function SubNewsLetter() {
       <Header>Subscribe to Our Newsletter</Header>
       <EmailFormWrapper>
         <EmailLabel>Email *</EmailLabel>
-        <EmailForm type="text" />
-        <JoinBtn>Join</JoinBtn>
+        <FormRow>
+          <EmailForm type="text" />
+          <JoinBtn>Join</JoinBtn>
+        </FormRow>
       </EmailFormWrapper>
     </Wrapper>
   )
@@ -16,13 +18,19 @@ function SubNewsLetter() {
 
 export const Wrapper = styled.div`
   background-color: #da392b;
-  width: 378px;
+  width: 100%;
+  max-width: 478px; /* let it shrink but not exceed this */
   height: 210px;
   border-radius: 15px;
   padding-left: 25px;
-  /* margin-right: 160px; */
+  padding-right: 10px;
   margin-bottom: 150px;
   margin-top: 180px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media screen and (max-width: 1180px) {
     margin-left: auto;
@@ -30,10 +38,16 @@ export const Wrapper = styled.div`
     margin-top: -200px;
   }
 
-  @media screen and (max-width: 530px) {
+  @media screen and (max-width: 768px) {
     width: 80%;
-    height: 270px;
   }
+`
+
+export const FormRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 `
 
 export const Header = styled.p`
@@ -66,37 +80,28 @@ export const EmailLabel = styled.label`
 `
 
 export const EmailForm = styled.input`
-  width: 238px;
+  flex: 1; /* grow/shrink automatically */
+  min-width: 0; /* fix flex overflow issues */
   height: 59px;
   border-radius: 15px;
-  border-color: transparent;
-  margin-right: 20px;
+  border: none;
   padding-left: 15px;
   font-size: 18px;
 
   :focus {
     outline: none;
   }
-
-  @media screen and (max-width: 530px) {
-    width: 85%;
-    margin-bottom: 20px;
-  }
 `
 
 export const JoinBtn = styled.button`
+  flex-shrink: 0; /* don't let it get squished */
   background-color: #fcff72;
-  border-color: transparent;
+  border: none;
   border-radius: 10px;
   width: 79px;
   height: 60px;
   color: #272443;
-  cursor: pointer !important;
-
-  @media screen and (max-width: 530px) {
-    width: 94%;
-    font-size: 18px;
-  }
+  cursor: pointer;
 `
 
 export default SubNewsLetter
