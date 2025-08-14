@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 
 function AboutTripo() {
-    return (
-        <Wrapper>
-            <Header>Our Games</Header>
-            <Text>I'm a paragraph.
-                Click here to add your own text and edit me.
-                I’m a great place for you to tell a story and let your users know a little more about you.
-            </Text>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header>Our Games</Header>
+      <Text>
+        I'm a paragraph. Click here to add your own text and edit me. I’m a
+        great place for you to tell a story and let your users know a little
+        more about you.
+      </Text>
+    </Wrapper>
+  )
 }
 
 export const Wrapper = styled.div`
@@ -24,7 +25,7 @@ export const Header = styled.p`
   text-align: center;
   color: #272443;
   font-size: 50px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: bold;
   margin-top: 50px;
 
@@ -43,7 +44,7 @@ export const Text = styled.p`
   width: 720px;
   text-align: center;
   color: #272443;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: -10px;
 
   @media screen and (max-width: 768px) {
@@ -55,4 +56,4 @@ export const Text = styled.p`
   }
 `
 
-export default AboutTripo;
+export default AboutTripo
