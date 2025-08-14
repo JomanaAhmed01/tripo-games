@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
-import HeaderLogo from '../components/Header/HeaderLogo';
+import HeaderLogo from "../components/Header/HeaderLogo"
 // import HeaderNavbar from '../components/Header/HeaderNavbar';
-import HeaderText from '../components/Header/HeaderText';
-import HeaderApps from '../components/Header/HeaderApps'
+import HeaderText from "../components/Header/HeaderText"
+import HeaderApps from "../components/Header/HeaderApps"
 
 function HeaderCompound() {
   return (
@@ -15,12 +15,11 @@ function HeaderCompound() {
       <HeaderText />
       <HeaderApps />
     </Wrapper>
-  );
+  )
 }
 
-
 export const Wrapper = styled.div`
-  background-image: url('./img/bg.jpg');
+  background-image: url("./img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -32,7 +31,6 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
-  
 
   @media screen and (max-width: 1024px) {
     padding-left: 0px;
@@ -40,4 +38,4 @@ export const HeaderWrapper = styled.div`
   }
 `
 
-export default HeaderCompound;
+export default HeaderCompound
