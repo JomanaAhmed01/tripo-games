@@ -4,7 +4,7 @@ import styled from "styled-components"
 function GamesCards() {
   return (
     <Wrapper>
-      <Link href='/KiponGameCompound'>
+      <Link href='/'>
         <Card>
           <Image src='./img/kipon.png'></Image>
           <TextWrapper>
@@ -14,7 +14,7 @@ function GamesCards() {
         </Card>
       </Link>
 
-      <Link href='/RobotrixGameCompound'>
+      <Link href='/'>
         <Card>
           <Image src='./img/robotrix.png'></Image>
           <TextWrapper>
@@ -24,7 +24,7 @@ function GamesCards() {
         </Card>
       </Link>
 
-      <Link href='/TreasureBoxGameCompound'>
+      <Link href='/'>
         <Card>
           <Image src='./img/treasure-box.png'></Image>
           <TextWrapper>
