@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
+;<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
 </style>
 
 function HeaderText() {
-    return (
-        <Wrapper>
-            <Header>Made to Be Played</Header>
-            <Text>The Very Best in Mobile Gaming</Text>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header>Made to Be Played</Header>
+      <Text>The Very Best in Mobile Gaming</Text>
+    </Wrapper>
+  )
 }
-
 
 export const Wrapper = styled.div`
   padding-top: 100px;
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.h1`
   font-size: 80px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #272443;
 
   @media screen and (max-width: 1024px) {
@@ -43,7 +43,7 @@ export const Header = styled.h1`
 
 export const Text = styled.p`
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   bottom: 50px;
   color: #272443;
@@ -61,4 +61,4 @@ export const Text = styled.p`
   }
 `
 
-export default HeaderText;
+export default HeaderText
