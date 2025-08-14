@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 function GetInTouch() {
   return (
@@ -11,26 +11,26 @@ function GetInTouch() {
         <FirstRow>
           <LabelFormWrapper>
             <FormLabel>First Name *</FormLabel>
-            <FirstNameForm type='text' />
+            <FirstNameForm type="text" />
           </LabelFormWrapper>
 
           <LabelFormWrapper>
             <FormLabel>Last Name *</FormLabel>
-            <LastNameForm type='text' />
+            <LastNameForm type="text" />
           </LabelFormWrapper>
         </FirstRow>
 
         <SecondRow>
           <LabelFormWrapper>
             <FormLabel>Email *</FormLabel>
-            <EmailForm type='text' />
+            <EmailForm type="text" />
           </LabelFormWrapper>
         </SecondRow>
 
         <ThirdRow>
           <LabelFormWrapper>
             <FormLabel>Leave us a message...</FormLabel>
-            <MessageForm type='textarea' />
+            <MessageForm type="textarea" />
           </LabelFormWrapper>
         </ThirdRow>
 
@@ -39,13 +39,12 @@ function GetInTouch() {
         </FourthRow>
       </FormsWrapper>
     </Wrapper>
-  );
+  )
 }
-
 
 export const Wrapper = styled.div`
   width: 438px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
   bottom: 250px;
   left: 150px;
@@ -70,7 +69,7 @@ export const Wrapper = styled.div`
 export const Header = styled.p`
   color: #272443;
   font-size: 34px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 30px;
 
@@ -82,7 +81,7 @@ export const Header = styled.p`
 export const Text = styled.p`
   color: #272443;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 273px;
   margin-bottom: 30px;
 
@@ -130,7 +129,7 @@ export const FormLabel = styled.label`
 export const FirstNameForm = styled.input`
   width: 165px;
   height: 59px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   border-width: 0.5px;
   border-color: #000000;
@@ -150,7 +149,7 @@ export const FirstNameForm = styled.input`
 export const LastNameForm = styled.input`
   width: 165px;
   height: 59px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   border-width: 0.5px;
   border-color: #000000;
@@ -170,7 +169,7 @@ export const LastNameForm = styled.input`
 export const EmailForm = styled.input`
   width: 380px;
   height: 59px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   border-width: 0.5px;
   border-color: #000000;
@@ -186,7 +185,7 @@ export const EmailForm = styled.input`
 export const MessageForm = styled.textarea`
   width: 380px;
   height: 100px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   border-width: 0.5px;
   border-color: #000000;
@@ -203,18 +202,18 @@ export const MessageForm = styled.textarea`
 
 export const SubmitButton = styled.button`
   background-color: #272443;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 400px;
   height: 60px;
   border-radius: 10px;
   border-color: transparent;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer !important;
   transition: 0.3s ease-in-out;
 
   :hover {
-    background-color: #DA392b;
+    background-color: #da392b;
   }
 
   @media screen and (max-width: 768px) {
@@ -222,4 +221,4 @@ export const SubmitButton = styled.button`
   }
 `
 
-export default GetInTouch;
+export default GetInTouch
