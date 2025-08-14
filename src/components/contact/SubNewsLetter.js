@@ -19,11 +19,11 @@ function SubNewsLetter() {
 export const Wrapper = styled.div`
   background-color: #da392b;
   width: 100%;
-  max-width: 478px; /* let it shrink but not exceed this */
+  max-width: 420px; /* let it shrink but not exceed this */
   height: 210px;
   border-radius: 15px;
   padding-left: 25px;
-  padding-right: 10px;
+  padding-right: 25px;
   margin-bottom: 150px;
   margin-top: 180px;
   box-sizing: border-box;

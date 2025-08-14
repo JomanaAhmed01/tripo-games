@@ -43,7 +43,7 @@ function GetInTouch() {
 }
 
 export const Wrapper = styled.div`
-  width: 438px;
+  width: 418px;
   background-color: #ffffff;
   position: relative;
   bottom: 250px;
