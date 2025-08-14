@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
 `
