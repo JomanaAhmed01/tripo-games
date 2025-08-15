@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 150px;
-  margin-top: 180px;
+  margin-top: 230px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
