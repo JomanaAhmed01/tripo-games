@@ -19,7 +19,7 @@ function SubNewsLetter() {
 export const Wrapper = styled.div`
   background-color: #da392b;
   width: 100%;
-  max-width: 420px; /* let it shrink but not exceed this */
+  max-width: 470px;
   height: 210px;
   border-radius: 15px;
   padding-left: 25px;
@@ -27,7 +27,6 @@ export const Wrapper = styled.div`
   margin-bottom: 150px;
   margin-top: 180px;
   box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +38,11 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 630px) {
+    width: 90%;
   }
 `
 

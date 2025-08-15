@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   margin-top: 100px;
   padding-left: 100px;
   padding-top: 50px;
-  padding-bottom: 400px;
+  padding-bottom: 380px;
 
   @media screen and (max-width: 768px) {
     padding-left: 50px;
