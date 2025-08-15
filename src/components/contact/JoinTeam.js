@@ -10,9 +10,6 @@ function JoinTeam() {
       <Text>Join Our Team</Text>
       <Header>It takes the world's best talent to change the game.</Header>
       <Button>Explore Careers</Button>
-      {/* <ImageWrapper>
-        <Image src='./img/contact-us-icon.png' />
-      </ImageWrapper> */}
     </Wrapper>
   );
 }
