@@ -52,7 +52,8 @@ export const Header = styled.p`
   font-size: 50px;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
-  width: 70%;
+  max-width: 880px;
+  margin-right: 30px;
 
   @media screen and (max-width: 1024px) {
     font-size: 45px;
