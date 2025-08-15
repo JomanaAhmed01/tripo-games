@@ -140,6 +140,7 @@ export const FirstNameForm = styled.input`
 
   @media screen and (max-width: 530px) {
     width: 90%;
+    margin-bottom: 20px;
   }
 `
 
