@@ -1,19 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
+import { useHistory } from 'react-router-dom';
 
 function HeaderApps() {
+  const history = useHistory();
   return (
     <Wrapper>
-      <Link href='https://www.wix.com/templateslp/links' target='_blank'>
-        <ImageOne src='./img/app-store.png' />
-      </Link>
-      <Link href='https://www.wix.com/templateslp/links' target='_blank'>
-        <ImageTwo src='./img/google-play.png' />
-      </Link>
+      <ImageOne src='./img/app-store.png' onClick={() => history.push('/')} style={{cursor: 'pointer'}} />
+      <ImageTwo src='./img/google-play.png' onClick={() => history.push('/')} style={{cursor: 'pointer'}} />
     </Wrapper>
   );
 }
-
 
 export const Wrapper = styled.div`
   padding-bottom: 190px;
@@ -30,10 +27,6 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 440px) {
     width: 220px;
   }
-`
-
-export const Link = styled.a`
-  
 `
 
 export const ImageOne = styled.img`
