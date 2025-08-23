@@ -1,8 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@300&family=Roboto:wght@300&family=Suez+One&display=swap');
-</style>
 
 function JoinTeam() {
   return (
@@ -39,7 +36,7 @@ export const Text = styled.p`
   color: #FFFFFF;
   font-size: 21px;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: -30px;
 
   @media screen and (max-width: 660px) {
@@ -51,7 +48,7 @@ export const Header = styled.p`
   color: #FFFFFF;
   font-size: 50px;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   max-width: 880px;
   margin-right: 30px;
 

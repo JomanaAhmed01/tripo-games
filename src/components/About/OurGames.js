@@ -25,7 +25,7 @@ export const Header = styled.p`
   text-align: center;
   color: #272443;
   font-size: 50px;
-  font-family: "Dancing Script", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 50px;
 
@@ -44,7 +44,7 @@ export const Text = styled.p`
   width: 720px;
   text-align: center;
   color: #272443;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: -10px;
 
   @media screen and (max-width: 768px) {

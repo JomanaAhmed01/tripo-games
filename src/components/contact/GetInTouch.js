@@ -66,7 +66,7 @@ export const Wrapper = styled.div`
 export const Header = styled.p`
   color: #272443;
   font-size: 34px;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-bottom: 30px;
 
@@ -78,7 +78,7 @@ export const Header = styled.p`
 export const Text = styled.p`
   color: #272443;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: 273px;
   margin-bottom: 30px;
 
@@ -133,6 +133,7 @@ export const FirstNameForm = styled.input`
   padding-left: 15px;
   font-size: 18px;
   color: #272443;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -154,6 +155,7 @@ export const LastNameForm = styled.input`
   padding-left: 15px;
   font-size: 18px;
   color: #272443;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -174,6 +176,7 @@ export const EmailForm = styled.input`
   padding-left: 15px;
   font-size: 18px;
   color: #272443;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -192,6 +195,7 @@ export const MessageForm = styled.textarea`
   font-size: 18px;
   color: #272443;
   resize: none;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -206,7 +210,7 @@ export const SubmitButton = styled.button`
   border-radius: 10px;
   border-color: transparent;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer !important;
   transition: 0.3s ease-in-out;
 

@@ -34,7 +34,6 @@ export const Header = styled.p`
   text-align: center;
   color: #272443;
   font-size: 50px;
-  font-family: 'Dancing Script', cursive;
   font-weight: bold;
   width: 808px;
 

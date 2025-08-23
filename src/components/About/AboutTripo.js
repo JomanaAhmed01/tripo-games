@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
 export const Header = styled.h3`
   text-align: center;
   color: #272443;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 768px) {
     font-size: 15px;

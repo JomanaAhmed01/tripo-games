@@ -196,6 +196,7 @@ export const TextOne = styled.p`
   cursor: pointer;
   transition: 0.3s;
   border-bottom-left-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 `
 
 export const TextTwo = styled.p`
@@ -203,6 +204,7 @@ export const TextTwo = styled.p`
   color: #272443;
   font-size: 16px;
   padding-top: 2px;
+  font-family: Arial, Helvetica, sans-serif;
 `
 
 export const TextThree = styled.p`
@@ -216,7 +218,7 @@ export const TextThree = styled.p`
   background-color: #FFFFFF;
   cursor: pointer;
   transition: 0.3s;
-
+  font-family: Arial, Helvetica, sans-serif;
   :hover {
     background-color: #DA392B;
     transition-duration: 0.5s;
@@ -235,7 +237,7 @@ export const TextFour = styled.p`
   background-color: #FFFFFF;
   cursor: pointer;
   transition: 0.3s;
-
+  font-family: Arial, Helvetica, sans-serif;
   :hover {
     background-color: #DA392B;
     transition-duration: 0.5s;
@@ -254,6 +256,7 @@ export const TextFive = styled.p`
   cursor: pointer;
   transition: 0.3s;
   border-bottom-right-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 
   :hover {
     background-color: #DA392B;
