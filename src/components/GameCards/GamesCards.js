@@ -34,9 +34,11 @@ function GamesCards() {
         </Card>
       </Link>
 
-      <Card>
-        <Image src="./img/explore-our-games.png"></Image>
-      </Card>
+      <Link href="/">
+        <Card>
+          <Image src="./img/explore-our-games.png"></Image>
+        </Card>
+      </Link>
     </Wrapper>
   )
 }
@@ -77,9 +79,9 @@ export const Card = styled.div`
 `
 
 export const Image = styled.img`
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   width: 100%;
 `
 
