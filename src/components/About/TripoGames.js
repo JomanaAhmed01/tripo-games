@@ -126,6 +126,7 @@ export const CardOne = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.32), 0 4px 16px 0 rgba(0,0,0,0.22);
 
   @media screen and (max-width: 430px) {
     width: 80%;
@@ -139,6 +140,7 @@ export const CardTwo = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.32), 0 4px 16px 0 rgba(0,0,0,0.22);
 
   @media screen and (max-width: 768px) {
     margin-top: 30px;
