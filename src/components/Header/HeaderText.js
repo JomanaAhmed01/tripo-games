@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
     padding-top: 60px;
     font-size: 70px;
     padding-top: 0px;
+    margin-right: 40px;
   }
 `
 
@@ -35,9 +36,8 @@ export const Header = styled.h1`
     font-size: 70px;
   }
 
-  @media screen and (max-width: 440px) {
-    font-size: 40px;
-    width: 200px;
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
   }
 `
 
