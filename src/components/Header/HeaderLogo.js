@@ -11,14 +11,14 @@ function HeaderLogo() {
 
   return (
     <Wrapper onClick={() => history.push('/')}>
-      {/* <Link>Tripo Games</Link> */}
+      <Link>Tripo Games</Link>
     </Wrapper>
   );
 }
 
 
 export const Wrapper = styled.div`
-  /* background-color: #DA392B;
+  background-color: #DA392B;
   width: 166px;
   height: 59px;
   display: flex;
@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 470px) {
     margin-left: 10px;
-  } */
+  }
 `
 
 export const Link = styled.a`
