@@ -11,26 +11,26 @@ function GetInTouch() {
         <FirstRow>
           <LabelFormWrapper>
             <FormLabel>First Name *</FormLabel>
-            <FirstNameForm type="text" />
+            <FirstNameForm placeholder="First Name" type="text" />
           </LabelFormWrapper>
 
           <LabelFormWrapper>
             <FormLabel>Last Name *</FormLabel>
-            <LastNameForm type="text" />
+            <LastNameForm placeholder="Last Name" type="text" />
           </LabelFormWrapper>
         </FirstRow>
 
         <SecondRow>
           <LabelFormWrapper>
             <FormLabel>Email *</FormLabel>
-            <EmailForm type="text" />
+            <EmailForm placeholder="Email" type="text" />
           </LabelFormWrapper>
         </SecondRow>
 
         <ThirdRow>
           <LabelFormWrapper>
             <FormLabel>Leave us a message...</FormLabel>
-            <MessageForm type="textarea" />
+            <MessageForm placeholder="Leave us a message..." type="textarea" />
           </LabelFormWrapper>
         </ThirdRow>
 
