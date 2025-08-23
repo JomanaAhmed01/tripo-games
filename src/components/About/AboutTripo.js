@@ -21,10 +21,9 @@ export const Header = styled.h3`
   text-align: center;
   color: #272443;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 15px;
-  }
+  
 `
 
 export default AboutTripo
