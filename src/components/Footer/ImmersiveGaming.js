@@ -1,11 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import HeaderLogo from "../Header/HeaderLogo"
 
 function ImmersiveGaming() {
   return (
     <Wrapper>
-      <HeaderLogo />
       <Text>An Immersive Gaming Experience</Text>
     </Wrapper>
   )
