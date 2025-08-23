@@ -154,7 +154,16 @@ export const GameName = styled.p`
 `
 
 export const ItemThree = styled.div`
-  
+  width: 104px;
+  height: 60px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+
+  :hover {
+    background-color: #DA392B;
+    transition-duration: 0.5s;
+  }
 `
 
 export const ItemFour = styled.div`
