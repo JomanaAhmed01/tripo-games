@@ -8,7 +8,7 @@ function SubNewsLetter() {
       <EmailFormWrapper>
         <EmailLabel>Email *</EmailLabel>
         <FormRow>
-          <EmailForm type="text" />
+          <EmailForm placeholder="Email" type="text" />
           <JoinBtn>Join</JoinBtn>
         </FormRow>
       </EmailFormWrapper>
@@ -102,7 +102,7 @@ export const EmailForm = styled.input`
   }
 
   @media screen and (max-width: 630px) {
-    width: 96%;
+    width: 95%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -120,7 +120,7 @@ export const JoinBtn = styled.button`
 
   @media screen and (max-width: 630px) {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
   }
 `
 
