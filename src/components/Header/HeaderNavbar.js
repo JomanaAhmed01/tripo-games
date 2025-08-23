@@ -53,31 +53,37 @@ function HeaderNavbar() {
         </ItemFive>
       </Items>
 
-      {showGamesMenuResponsive ? (
-        <MenuWrapper>
-          <CloseIcon onClick={() => setShowGamesMenuResponsive(false)} />
-          <MenuItemsWrapper>
-            <MenuItem onClick={() => history.push('/')}>Home</MenuItem>
-            <MenuItem onClick={() => setShowMenuGames(true)}>Games</MenuItem>
-            {showMenuGames ? (
-              <MenuGamesWrapper>
-                <CloseIconGamesMenu onClick={() => setShowMenuGames(false)} />
-                <MenuGameName onClick={() => history.push('/')}>Kipon</MenuGameName>
-                <MenuGameName onClick={() => history.push('/')}>Robotrix</MenuGameName>
-                <MenuGameName onClick={() => history.push('/')}>Treasure Box</MenuGameName>
-              </MenuGamesWrapper>
-            ) : (
-              null
-            )}
-            <MenuItem onClick={() => history.push('/')}>Careers</MenuItem>
-            <MenuItem onClick={() => history.push('/')}>About</MenuItem>
-            <MenuItem onClick={() => history.push('/')}>Contact</MenuItem>
-          </MenuItemsWrapper>
-        </MenuWrapper>
-      ) : (
+      {showGamesMenuResponsive && (
         <>
-          <MenuIcon onClick={() => setShowGamesMenuResponsive(true)} />
+          <Overlay onClick={() => setShowGamesMenuResponsive(false)} />
+          <MenuWrapper>
+            <CloseIcon onClick={() => setShowGamesMenuResponsive(false)} />
+            <MenuItemsWrapper>
+              <MenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Home</MenuItem>
+              <MenuItem onClick={() => setShowMenuGames(true)}>Games</MenuItem>
+              <MenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Careers</MenuItem>
+              <MenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>About</MenuItem>
+              <MenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Contact</MenuItem>
+            </MenuItemsWrapper>
+          </MenuWrapper>
+          {showMenuGames && (
+            <>
+              <GamesOverlay onClick={() => setShowMenuGames(false)} />
+              <GamesMenuWrapper>
+                <GamesCloseIcon onClick={() => setShowMenuGames(false)} />
+                <GamesMenuItemsWrapper>
+                  <GamesMenuTitle>Games</GamesMenuTitle>
+                  <GamesMenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Kipon</GamesMenuItem>
+                  <GamesMenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Robotrix</GamesMenuItem>
+                  <GamesMenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Treasure Box</GamesMenuItem>
+                </GamesMenuItemsWrapper>
+              </GamesMenuWrapper>
+            </>
+          )}
         </>
+      )}
+      {!showGamesMenuResponsive && (
+        <MenuIcon onClick={() => setShowGamesMenuResponsive(true)} />
       )}
     </Wrapper>
   );
@@ -252,32 +258,65 @@ export const TextFive = styled.p`
   }
 `
 
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: 99;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+`;
+
 export const MenuWrapper = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: initial;
-    background-color: #FFFFFF;
-    width: 200px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  width: 70vw;
+  max-width: 240px;
+  min-width: 160px;
+  min-height: 220px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  @media screen and (min-width: 769px) {
+    display: none;
   }
+`;
 
+export const CloseIcon = styled(Close)`
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  z-index: 101;
   @media screen and (max-width: 470px) {
-    width: 170px;
+    width: 22px;
+    height: 22px;
   }
-`
+`;
 
 export const MenuItemsWrapper = styled.div`
-  margin-top: -20px;
-`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 24px 0 24px 0;
+`;
 
 export const MenuItem = styled.p`
   color: #272443;
@@ -325,18 +364,6 @@ export const CloseIconGamesMenu = styled(Close)`
   }
 `
 
-export const CloseIcon = styled(Close)`
-  width: 40px;
-  height: 40px;
-  margin-right: -130px;
-  padding-top: 10px;
-
-  @media screen and (max-width: 470px) {
-    width: 30px;
-    height: 30px;
-  }
-`
-
 export const MenuIcon = styled(Menu)`
   width: 40px;
   height: 40px;
@@ -345,10 +372,80 @@ export const MenuIcon = styled(Menu)`
   padding-top: 5px;
   color: #272443; 
   display: none;
-
   @media screen and (max-width: 768px) {
     display: initial;
   }
-`
+`;
+
+// Add missing styled components for the games modal
+export const GamesOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 110;
+`;
+
+export const GamesMenuWrapper = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 65vw;
+  max-width: 220px;
+  min-width: 140px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4);
+  z-index: 120;
+`;
+
+export const GamesCloseIcon = styled(Close)`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 121;
+`;
+
+export const GamesMenuItemsWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 36px 0 24px 0;
+`;
+
+export const GamesMenuTitle = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  color: #272443;
+  margin-bottom: 10px;
+`;
+
+export const GamesMenuItem = styled.div`
+  color: #272443;
+  font-size: 18px;
+  padding: 8px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  &:hover {
+    background: #DA392B;
+    color: #fff;
+  }
+`;
 
 export default HeaderNavbar;
