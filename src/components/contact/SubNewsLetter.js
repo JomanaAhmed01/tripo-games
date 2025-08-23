@@ -43,6 +43,8 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 630px) {
     width: 90%;
+    padding-bottom: 20px;
+    height: auto;
   }
 `
 
@@ -51,6 +53,10 @@ export const FormRow = styled.div`
   align-items: center;
   gap: 10px;
   width: 100%;
+
+  @media screen and (max-width: 630px) {
+    flex-direction: column;
+  }
 `
 
 export const Header = styled.p`
@@ -94,6 +100,12 @@ export const EmailForm = styled.input`
   :focus {
     outline: none;
   }
+
+  @media screen and (max-width: 630px) {
+    width: 96%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 `
 
 export const JoinBtn = styled.button`
@@ -105,6 +117,11 @@ export const JoinBtn = styled.button`
   height: 60px;
   color: #272443;
   cursor: pointer;
+
+  @media screen and (max-width: 630px) {
+    width: 100%;
+    padding: 20px;
+  }
 `
 
 export default SubNewsLetter
