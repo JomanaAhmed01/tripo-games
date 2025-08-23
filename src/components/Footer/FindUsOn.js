@@ -26,11 +26,11 @@ export const Header = styled.p`
 export const ElementsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 325px;
 
   @media screen and (max-width: 930px) {
     justify-content: space-between;
     flex-direction: row;
+    width: 325px;
   }
 `
 
