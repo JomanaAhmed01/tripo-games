@@ -96,6 +96,7 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     background-color: #FFFFFF;
+    margin-right: 30px;
   }
 `
 
