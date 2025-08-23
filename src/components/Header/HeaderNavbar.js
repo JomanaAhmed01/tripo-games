@@ -73,9 +73,9 @@ function HeaderNavbar() {
                 <GamesCloseIcon onClick={() => setShowMenuGames(false)} />
                 <GamesMenuItemsWrapper>
                   <GamesMenuTitle>Games</GamesMenuTitle>
-                  <GamesMenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Kipon</GamesMenuItem>
-                  <GamesMenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Robotrix</GamesMenuItem>
-                  <GamesMenuItem onClick={() => { setShowMenuGames(false); history.push('/') }}>Treasure Box</GamesMenuItem>
+                  <GamesMenuItem onClick={() => { setShowMenuGames(false); setShowGamesMenuResponsive(false); history.push('/') }}>Kipon</GamesMenuItem>
+                  <GamesMenuItem onClick={() => { setShowMenuGames(false); setShowGamesMenuResponsive(false); history.push('/') }}>Robotrix</GamesMenuItem>
+                  <GamesMenuItem onClick={() => { setShowMenuGames(false); setShowGamesMenuResponsive(false); history.push('/') }}>Treasure Box</GamesMenuItem>
                 </GamesMenuItemsWrapper>
               </GamesMenuWrapper>
             </>
