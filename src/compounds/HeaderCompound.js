@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import HeaderLogo from "../components/Header/HeaderLogo"
-// import HeaderNavbar from '../components/Header/HeaderNavbar';
+import HeaderNavbar from '../components/Header/HeaderNavbar';
 import HeaderText from "../components/Header/HeaderText"
 import HeaderApps from "../components/Header/HeaderApps"
 
@@ -10,7 +10,7 @@ function HeaderCompound() {
     <Wrapper>
       <HeaderWrapper>
         <HeaderLogo />
-        {/* <HeaderNavbar /> */}
+        <HeaderNavbar />
       </HeaderWrapper>
       <HeaderText />
       <HeaderApps />
