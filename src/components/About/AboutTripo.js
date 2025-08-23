@@ -10,10 +10,10 @@ function AboutTripo() {
 }
 
 export const Wrapper = styled.div`
-  margin-top: -100px;
+  margin-top: -150px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 0px;
+    margin-top: -50px;
   }
 `
 
